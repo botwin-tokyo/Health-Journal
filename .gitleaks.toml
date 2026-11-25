@@ -1,0 +1,11 @@
+[extend]
+useDefault = true
+
+# These public sleep metric identifiers are consumed by the dashboard.
+[[rules]]
+id = "generic-api-key"
+[[rules.allowlists]]
+condition = "AND"
+paths = ['''^contracts/metrics\.v1\.yaml$''']
+regexTarget = "secret"
+regexes = ['''^wake_variation_(7d|28d)$''']

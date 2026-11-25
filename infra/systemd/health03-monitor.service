@@ -1,0 +1,39 @@
+[Unit]
+Description=Health03 monitor
+After=postgresql.service health03-bao-agent.service
+StartLimitIntervalSec=120
+StartLimitBurst=5
+[Service]
+User=root
+Group=root
+SupplementaryGroups=health03-kms
+WorkingDirectory=/opt/health03/current/backend
+EnvironmentFile=/etc/health03/runtime.env
+LoadCredential=django-secret:/etc/health03/credentials/django-secret
+LoadCredential=smtp-password:/etc/health03/credentials/smtp-password
+LoadCredential=tunnel-origin-secret:/etc/health03/credentials/tunnel-origin-secret
+ExecStart=/opt/health03/current/.venv/bin/python /opt/health03/current/backend/manage.py health03_ops_status
+ReadWritePaths=/var/lib/health03 /run/health03
+RuntimeDirectory=health03
+RuntimeDirectoryMode=0750
+Type=oneshot
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+LimitCORE=0
+MemorySwapMax=0
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect health uploader</title>
+<h1>Connect your phone</h1>
+<p>This phone can upload readings and check its own upload receipts. It cannot read your journal, history, labs or shared records.</p>
+<form method="post">{% csrf_token %}
+<label>Installation <select name="existing_device"><option value="">New installation</option>{% for device in devices %}<option value="{{ device.pk }}">Reconnect {{ device.label }}</option>{% endfor %}</select></label>
+<label>Phone name <input name="label" maxlength="80" required autocomplete="off"></label>
+<button name="allow" value="yes">Connect phone</button>
+<button name="allow" value="no" formnovalidate>Cancel</button>
+</form></html>

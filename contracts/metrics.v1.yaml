@@ -1,0 +1,2316 @@
+{
+  "registry_version": "health03-metrics-1",
+  "metrics": [
+    {
+      "key": "weight",
+      "label": "weight",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": true,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bmi",
+      "label": "bmi",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "body_fat_percent",
+      "label": "body fat percent",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fat_free_weight",
+      "label": "fat free weight",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "subcutaneous_fat_percent",
+      "label": "subcutaneous fat percent",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "visceral_fat_index",
+      "label": "visceral fat index",
+      "unit": "index",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "body_water_percent",
+      "label": "body water percent",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skeletal_muscle_percent",
+      "label": "skeletal muscle percent",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "muscle_mass",
+      "label": "muscle mass",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bone_mass",
+      "label": "bone mass",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "protein_percent",
+      "label": "protein percent",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bmr",
+      "label": "bmr",
+      "unit": "kcal/day",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "metabolic_age",
+      "label": "metabolic age",
+      "unit": "years",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fvc",
+      "label": "fvc",
+      "unit": "L",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": true,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fev1",
+      "label": "fev1",
+      "unit": "L",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": true,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fev6",
+      "label": "fev6",
+      "unit": "L",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "vext",
+      "label": "vext",
+      "unit": "L",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fivc",
+      "label": "fivc",
+      "unit": "L",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "pef",
+      "label": "pef",
+      "unit": "L/min",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": true,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fef2575",
+      "label": "fef2575",
+      "unit": "L/s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fef25",
+      "label": "fef25",
+      "unit": "L/s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fef50",
+      "label": "fef50",
+      "unit": "L/s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fef75",
+      "label": "fef75",
+      "unit": "L/s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "pif",
+      "label": "pif",
+      "unit": "L/s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fev1_fvc",
+      "label": "fev1 fvc",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fet",
+      "label": "fet",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "manual",
+        "imported_file"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bpm",
+      "label": "bpm",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "requested_sample",
+      "validation": {
+        "exclusive_minimum": "0"
+      },
+      "display_precision": 2
+    },
+    {
+      "key": "heart_rate",
+      "label": "heart rate",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "heart_rate_min",
+      "label": "heart rate min",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "heart_rate_max",
+      "label": "heart rate max",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "hr_sample_min",
+      "label": "hr sample min",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "hr_sample_max",
+      "label": "hr sample max",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "hr_sample_mean",
+      "label": "hr sample mean",
+      "unit": "beats/min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "rmssd",
+      "label": "rmssd",
+      "unit": "ms",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "sdnn",
+      "label": "sdnn",
+      "unit": "ms",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "respiration_rate",
+      "label": "respiration rate",
+      "unit": "breaths/min",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "oxygen_saturation",
+      "label": "oxygen saturation",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "oxygen_interval_min",
+      "label": "oxygen interval min",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "oxygen_interval_max",
+      "label": "oxygen interval max",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "stress_score",
+      "label": "stress score",
+      "unit": "score",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "stress_min",
+      "label": "stress min",
+      "unit": "score",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "stress_max",
+      "label": "stress max",
+      "unit": "score",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skin_temperature_processed",
+      "label": "skin temperature processed",
+      "unit": "\u00b0C",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "native_derived"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "experimental",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "source_history_bin",
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skin_nightly_median",
+      "label": "skin nightly median",
+      "unit": "\u00b0C",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skin_baseline",
+      "label": "skin baseline",
+      "unit": "\u00b0C",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skin_deviation",
+      "label": "skin deviation",
+      "unit": "\u00b0C",
+      "value_kind": "decimal",
+      "capability_status": "experimental",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skin_temperature",
+      "label": "skin temperature",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ambient_temperature",
+      "label": "ambient temperature",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "rri",
+      "label": "rri",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ring_distance",
+      "label": "ring distance",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ring_speed",
+      "label": "ring speed",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ring_calories",
+      "label": "ring calories",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ring_duration",
+      "label": "ring duration",
+      "unit": null,
+      "value_kind": "decimal",
+      "capability_status": "diagnostic_only",
+      "chart_eligible": false,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "phone_steps",
+      "label": "phone steps",
+      "unit": "count",
+      "value_kind": "integer",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "phone_recording"
+      ],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "reported",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": "recorded_interval_count",
+      "validation": {
+        "minimum": "0"
+      },
+      "display_precision": 2
+    },
+    {
+      "key": "steps",
+      "label": "steps",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "walking_steps",
+      "label": "walking steps",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "running_steps",
+      "label": "running steps",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "ring_step_subtotal",
+      "label": "ring step subtotal",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "hr_sample_count",
+      "label": "hr sample count",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "observed_awakenings",
+      "label": "observed awakenings",
+      "unit": "count",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "sleep_score",
+      "label": "sleep score",
+      "unit": "points",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "sleep_efficiency",
+      "label": "sleep efficiency",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "workout_duration",
+      "label": "workout duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "sleep_span",
+      "label": "sleep span",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "sleep_duration",
+      "label": "sleep duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "light_duration",
+      "label": "light duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "deep_duration",
+      "label": "deep duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "rem_duration",
+      "label": "rem duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "awake_duration",
+      "label": "awake duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "unknown_duration",
+      "label": "unknown duration",
+      "unit": "s",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "workout_gross_kcal",
+      "label": "workout gross kcal",
+      "unit": "kcal",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "workout_active_kcal",
+      "label": "workout active kcal",
+      "unit": "kcal",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "workout_argus_kcal",
+      "label": "workout argus kcal",
+      "unit": "kcal",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "workout_console_kcal",
+      "label": "workout console kcal",
+      "unit": "kcal",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bedtime_variation_7d",
+      "label": "bedtime variation 7d",
+      "unit": "min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "bedtime_variation_28d",
+      "label": "bedtime variation 28d",
+      "unit": "min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "wake_variation_7d",
+      "label": "wake variation 7d",
+      "unit": "min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "wake_variation_28d",
+      "label": "wake variation 28d",
+      "unit": "min",
+      "value_kind": "decimal",
+      "capability_status": "conditional",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [],
+      "requirements": [
+        "verified_adapter"
+      ],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "unqualified",
+      "interpretation": "Reported observation; no diagnosis or treatment inference.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "body_fat",
+      "label": "body fat",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fat_free_mass",
+      "label": "fat free mass",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "subcutaneous_fat",
+      "label": "subcutaneous fat",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "visceral_fat",
+      "label": "visceral fat",
+      "unit": "index",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "water",
+      "label": "water",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "skeletal_muscle",
+      "label": "skeletal muscle",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "protein",
+      "label": "protein",
+      "unit": "%",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "fat_mass",
+      "label": "fat mass",
+      "unit": "kg",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "circumference_waist",
+      "label": "circumference waist",
+      "unit": "cm",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "circumference_hip",
+      "label": "circumference hip",
+      "unit": "cm",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "circumference_chest",
+      "label": "circumference chest",
+      "unit": "cm",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "circumference_arm",
+      "label": "circumference arm",
+      "unit": "cm",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    },
+    {
+      "key": "circumference_thigh",
+      "label": "circumference thigh",
+      "unit": "cm",
+      "value_kind": "decimal",
+      "capability_status": "implemented",
+      "chart_eligible": true,
+      "baseline_eligible": false,
+      "allowed_source_types": [
+        "direct_device",
+        "direct_scale",
+        "manual",
+        "imported_file",
+        "native_derived",
+        "phone_recording",
+        "synthetic",
+        "unknown"
+      ],
+      "requirements": [],
+      "allowed_views": [
+        "owner",
+        "scoped_doctor"
+      ],
+      "qualification": "source_reported",
+      "interpretation": "Reported by the phone. Preserve source qualification and calculation provenance.",
+      "source_key_aliases": [],
+      "statistic": null,
+      "validation": {},
+      "display_precision": 2
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[Unit]
+Description=Health03 local OpenBao key service
+After=network.target
+
+[Service]
+User=health03-bao
+Group=health03-bao
+ExecStart=/usr/local/lib/openbao/2.7.2/bao server -config=/etc/health03/openbao/server.hcl
+Restart=on-failure
+RestartSec=5
+StateDirectory=health03-openbao
+StateDirectoryMode=0700
+LogsDirectory=health03-openbao
+LogsDirectoryMode=0700
+UMask=0077
+LimitCORE=0
+MemorySwapMax=0
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=multi-user.target

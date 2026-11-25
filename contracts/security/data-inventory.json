@@ -1,0 +1,909 @@
+{
+  "version": 1,
+  "default": "unclassified columns prohibited",
+  "entities": [
+    {
+      "entity": "Account",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "role": "routing_metadata",
+        "is_active": "routing_metadata",
+        "enrollment_state": "routing_metadata",
+        "security_epoch": "routing_metadata",
+        "created_at": "routing_metadata",
+        "email": "authentication_restricted",
+        "password_hash": "authentication_restricted",
+        "verification_state": "authentication_restricted",
+        "reset_state": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "SessionSecurity",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "account_id": "routing_metadata",
+        "created_at": "routing_metadata",
+        "last_user_activity_at": "routing_metadata",
+        "idle_expires_at": "routing_metadata",
+        "absolute_expires_at": "routing_metadata",
+        "password_verified_at": "routing_metadata",
+        "security_epoch": "routing_metadata",
+        "context_grant_id": "routing_metadata",
+        "session_key_hash": "authentication_restricted",
+        "session_payload": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "Patient",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "owner_id": "routing_metadata",
+        "sharing_epoch": "routing_metadata",
+        "created_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "PreferenceRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "version": "routing_metadata",
+        "created_at": "routing_metadata",
+        "preferences_payload": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "ProfileRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "version": "routing_metadata",
+        "created_at": "routing_metadata",
+        "profile_payload": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "SourceConnection",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "namespace": "routing_metadata",
+        "device_id": "routing_metadata",
+        "capability_status": "routing_metadata",
+        "created_at": "routing_metadata",
+        "external_identity": "envelope_encrypted",
+        "labels": "envelope_encrypted",
+        "firmware_metadata": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "DeviceRegistration",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "source_namespace": "routing_metadata",
+        "active": "routing_metadata",
+        "security_epoch": "routing_metadata",
+        "authorized_at": "routing_metadata",
+        "revoked_at": "routing_metadata",
+        "label": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "CapabilityReceipt",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "source_connection_id": "routing_metadata",
+        "observed_at": "routing_metadata",
+        "capability_status": "routing_metadata",
+        "algorithm_version": "routing_metadata",
+        "evidence": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "Record",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "kind": "routing_metadata",
+        "current_revision_id": "routing_metadata",
+        "source_connection_id": "routing_metadata",
+        "source_lookup_key_version": "routing_metadata",
+        "source_lookup_hmac": "routing_metadata",
+        "deleted_at": "routing_metadata",
+        "retired_at": "routing_metadata",
+        "source_identity": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "RecordRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "record_id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "server_version": "routing_metadata",
+        "source_revision": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "measured_start": "routing_metadata",
+        "measured_end": "routing_metadata",
+        "timezone": "routing_metadata",
+        "offset_minutes": "routing_metadata",
+        "time_precision": "routing_metadata",
+        "received_at": "routing_metadata",
+        "source_payload_hmac": "routing_metadata",
+        "validity": "routing_metadata",
+        "qualification": "routing_metadata",
+        "availability": "routing_metadata",
+        "capture_status": "routing_metadata",
+        "author_id": "routing_metadata",
+        "payload": "envelope_encrypted",
+        "provenance": "envelope_encrypted",
+        "original_units": "envelope_encrypted",
+        "client_digest": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "RecordLink",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "from_revision_id": "routing_metadata",
+        "to_revision_id": "routing_metadata",
+        "stable_record_id": "routing_metadata",
+        "relation": "routing_metadata",
+        "visibility_policy": "routing_metadata"
+      }
+    },
+    {
+      "entity": "MetricDefinition",
+      "owner": "operator",
+      "fields": {
+        "id": "routing_metadata",
+        "key": "routing_metadata",
+        "registry_version": "routing_metadata",
+        "source_types": "routing_metadata",
+        "capability_status": "routing_metadata",
+        "chart_eligibility": "routing_metadata",
+        "baseline_eligibility": "routing_metadata",
+        "unit": "routing_metadata",
+        "statistic": "routing_metadata"
+      }
+    },
+    {
+      "entity": "ObservationIndex",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "revision_id": "routing_metadata",
+        "metric_key": "routing_metadata",
+        "series_fingerprint": "routing_metadata",
+        "algorithm_version": "routing_metadata",
+        "profile_revision_id": "routing_metadata"
+      }
+    },
+    {
+      "entity": "BlobObject",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "revision_id": "routing_metadata",
+        "opaque_path": "routing_metadata",
+        "mime_type": "routing_metadata",
+        "ciphertext_size": "routing_metadata",
+        "ciphertext_sha256": "routing_metadata",
+        "original_content_hmac": "routing_metadata",
+        "lookup_key_version": "routing_metadata",
+        "purpose": "routing_metadata",
+        "state": "routing_metadata",
+        "created_at": "routing_metadata",
+        "content": "envelope_encrypted",
+        "original_filename": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "IngestBatch",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "device_id": "routing_metadata",
+        "namespace": "routing_metadata",
+        "batch_id": "routing_metadata",
+        "body_hmac": "routing_metadata",
+        "state": "routing_metadata",
+        "received_at": "routing_metadata",
+        "original_envelope": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "IngestItemReceipt",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "batch_id": "routing_metadata",
+        "record_id": "routing_metadata",
+        "revision_id": "routing_metadata",
+        "source_revision": "routing_metadata",
+        "outcome": "routing_metadata",
+        "durably_retained": "routing_metadata",
+        "received_at": "routing_metadata",
+        "source_identity": "envelope_encrypted",
+        "client_digest": "envelope_encrypted",
+        "rejection_evidence": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "SourceTombstone",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "namespace": "routing_metadata",
+        "kind": "routing_metadata",
+        "source_lookup_hmac": "routing_metadata",
+        "lookup_key_version": "routing_metadata",
+        "source_revision": "routing_metadata",
+        "deleted_at": "routing_metadata",
+        "source_identity": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "Job",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "type": "routing_metadata",
+        "object_id": "routing_metadata",
+        "deduplication_key": "routing_metadata",
+        "state": "routing_metadata",
+        "available_at": "routing_metadata",
+        "lease_owner": "routing_metadata",
+        "lease_token": "routing_metadata",
+        "lease_expires_at": "routing_metadata",
+        "attempts": "routing_metadata",
+        "principal_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "permission_epoch": "routing_metadata",
+        "error_code": "routing_metadata"
+      }
+    },
+    {
+      "entity": "OutboxEvent",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "kind": "routing_metadata",
+        "target_id": "routing_metadata",
+        "sequence": "routing_metadata",
+        "state": "routing_metadata",
+        "created_at": "routing_metadata",
+        "acknowledged_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "DailyDesignation",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "domain": "routing_metadata",
+        "slot": "routing_metadata",
+        "chosen_record_id": "routing_metadata",
+        "version": "routing_metadata",
+        "actor_id": "routing_metadata",
+        "reason": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "AggregateSnapshot",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "method_version": "routing_metadata",
+        "series_fingerprint": "routing_metadata",
+        "from_date": "routing_metadata",
+        "to_date": "routing_metadata",
+        "created_at": "routing_metadata",
+        "state": "routing_metadata",
+        "source_epoch": "routing_metadata",
+        "result": "envelope_encrypted",
+        "series_definition": "envelope_encrypted",
+        "exclusions": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "BaselineSnapshot",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "method_version": "routing_metadata",
+        "series_fingerprint": "routing_metadata",
+        "from_date": "routing_metadata",
+        "to_date": "routing_metadata",
+        "created_at": "routing_metadata",
+        "supersedes_id": "routing_metadata",
+        "retired_at": "routing_metadata",
+        "result": "envelope_encrypted",
+        "series_definition": "envelope_encrypted",
+        "exclusions": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "Dependency",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "snapshot_id": "routing_metadata",
+        "revision_id": "routing_metadata",
+        "relation": "routing_metadata"
+      }
+    },
+    {
+      "entity": "JournalRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "record_revision_id": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "visibility": "routing_metadata",
+        "version": "routing_metadata",
+        "title": "envelope_encrypted",
+        "text": "envelope_encrypted",
+        "feeling": "envelope_encrypted",
+        "symptoms": "envelope_encrypted",
+        "energy": "envelope_encrypted",
+        "tags": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "MedicationEventRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "record_revision_id": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "version": "routing_metadata",
+        "name": "envelope_encrypted",
+        "dose": "envelope_encrypted",
+        "unit": "envelope_encrypted",
+        "note": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "QuestionRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "record_revision_id": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "visibility": "routing_metadata",
+        "version": "routing_metadata",
+        "private_origin_id": "routing_metadata",
+        "text": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "LabReport",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "current_revision_id": "routing_metadata",
+        "original_document_id": "routing_metadata",
+        "created_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "LabReportRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "report_id": "routing_metadata",
+        "review_state": "routing_metadata",
+        "source_state": "routing_metadata",
+        "patient_match_state": "routing_metadata",
+        "collection_date": "routing_metadata",
+        "issued_at": "routing_metadata",
+        "supersedes_id": "routing_metadata",
+        "version": "routing_metadata",
+        "patient_identifiers": "envelope_encrypted",
+        "accession": "envelope_encrypted",
+        "report_metadata": "envelope_encrypted",
+        "original_text": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "LabResult",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "report_revision_id": "routing_metadata",
+        "record_revision_id": "routing_metadata",
+        "clinical_date": "routing_metadata",
+        "series_fingerprint": "routing_metadata",
+        "reviewed": "routing_metadata",
+        "test_label": "envelope_encrypted",
+        "test_code": "envelope_encrypted",
+        "specimen": "envelope_encrypted",
+        "method": "envelope_encrypted",
+        "result": "envelope_encrypted",
+        "operator": "envelope_encrypted",
+        "unit": "envelope_encrypted",
+        "reference_interval": "envelope_encrypted",
+        "flags": "envelope_encrypted",
+        "comments": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "ExtractionField",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "report_revision_id": "routing_metadata",
+        "page": "routing_metadata",
+        "coordinates": "routing_metadata",
+        "state": "routing_metadata",
+        "engine_version": "routing_metadata",
+        "raw_text": "envelope_encrypted",
+        "proposed_value": "envelope_encrypted",
+        "reviewer_correction": "envelope_encrypted",
+        "match_evidence": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "DoctorGrant",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "recipient_id": "routing_metadata",
+        "state": "routing_metadata",
+        "current_revision_id": "routing_metadata",
+        "accepted_at": "routing_metadata",
+        "revoked_at": "routing_metadata",
+        "expires_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "GrantRevision",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "version": "routing_metadata",
+        "from_date": "routing_metadata",
+        "to_date": "routing_metadata",
+        "categories": "routing_metadata",
+        "actions": "routing_metadata",
+        "record_allowlists": "routing_metadata",
+        "document_ids": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "created_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "GrantDocument",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "grant_revision_id": "routing_metadata",
+        "document_id": "routing_metadata",
+        "acknowledged_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "Invitation",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "intended_account_id": "routing_metadata",
+        "secret_hash": "routing_metadata",
+        "created_at": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "consumed_at": "routing_metadata",
+        "intended_email": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "ReviewDraft",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "version": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "from_date": "routing_metadata",
+        "to_date": "routing_metadata",
+        "created_at": "routing_metadata",
+        "title": "envelope_encrypted",
+        "selection": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "ReportSnapshot",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "draft_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "created_at": "routing_metadata",
+        "sharing_epoch": "routing_metadata",
+        "schema_version": "envelope_metadata",
+        "canonical_content": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "ExportArtifact",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "snapshot_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "state": "routing_metadata",
+        "created_at": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "blob_id": "routing_metadata",
+        "part_id": "routing_metadata",
+        "size": "routing_metadata"
+      }
+    },
+    {
+      "entity": "DownloadTicket",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "account_id": "routing_metadata",
+        "session_id": "routing_metadata",
+        "artifact_id": "routing_metadata",
+        "part_id": "routing_metadata",
+        "grant_id": "routing_metadata",
+        "permission_epoch": "routing_metadata",
+        "token_hash": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "consumed_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "AuditEvent",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "actor_id": "routing_metadata",
+        "actor_type": "routing_metadata",
+        "action": "routing_metadata",
+        "target_id": "routing_metadata",
+        "category": "routing_metadata",
+        "outcome": "routing_metadata",
+        "timestamp": "routing_metadata",
+        "request_id": "routing_metadata",
+        "grant_revision": "routing_metadata",
+        "device_revision": "routing_metadata",
+        "optional_ip_user_agent": "envelope_encrypted",
+        "envelope_version": "envelope_metadata",
+        "schema_version": "envelope_metadata",
+        "key_name": "envelope_metadata",
+        "wrapping_key_version": "envelope_metadata",
+        "wrapped_dek": "envelope_metadata",
+        "nonce": "envelope_metadata",
+        "ciphertext": "ciphertext"
+      }
+    },
+    {
+      "entity": "DeletionRequest",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "patient_id": "routing_metadata",
+        "scope": "routing_metadata",
+        "state": "routing_metadata",
+        "accepted_at": "routing_metadata",
+        "purge_by": "routing_metadata",
+        "ledger_sequence": "routing_metadata",
+        "completed_at": "routing_metadata"
+      }
+    },
+    {
+      "entity": "RetentionRun",
+      "owner": "operator",
+      "fields": {
+        "id": "routing_metadata",
+        "type": "routing_metadata",
+        "started_at": "routing_metadata",
+        "completed_at": "routing_metadata",
+        "outcome": "routing_metadata",
+        "counts": "routing_metadata"
+      }
+    },
+    {
+      "entity": "OAuthApplication",
+      "owner": "operator",
+      "fields": {
+        "id": "routing_metadata",
+        "client_id": "routing_metadata",
+        "client_type": "routing_metadata",
+        "grant_type": "routing_metadata",
+        "redirect_uris": "routing_metadata",
+        "scopes": "routing_metadata"
+      }
+    },
+    {
+      "entity": "OAuthGrant",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "application_id": "routing_metadata",
+        "account_id": "routing_metadata",
+        "device_id": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "scopes": "routing_metadata",
+        "pkce_method": "routing_metadata",
+        "authorization_code_hash": "authentication_restricted",
+        "pkce_challenge": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "OAuthTokenFamily",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "account_id": "routing_metadata",
+        "device_id": "routing_metadata",
+        "authorized_at": "routing_metadata",
+        "absolute_expires_at": "routing_metadata",
+        "last_refresh_at": "routing_metadata",
+        "revoked_at": "routing_metadata",
+        "security_epoch": "routing_metadata"
+      }
+    },
+    {
+      "entity": "OAuthAccessToken",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "family_id": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "scopes": "routing_metadata",
+        "token_hash": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "OAuthRefreshToken",
+      "owner": "patient/account scoped",
+      "fields": {
+        "id": "routing_metadata",
+        "family_id": "routing_metadata",
+        "issued_at": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "revoked_at": "routing_metadata",
+        "consumed_at": "routing_metadata",
+        "token_hash": "authentication_restricted"
+      }
+    },
+    {
+      "entity": "RateLimitEntry",
+      "owner": "operator",
+      "fields": {
+        "id": "routing_metadata",
+        "namespace": "routing_metadata",
+        "key_hash": "routing_metadata",
+        "window_start": "routing_metadata",
+        "expires_at": "routing_metadata",
+        "count": "routing_metadata"
+      }
+    },
+    {
+      "entity": "BackupManifest",
+      "owner": "operator",
+      "fields": {
+        "id": "routing_metadata",
+        "release": "routing_metadata",
+        "schema_version": "routing_metadata",
+        "db_snapshot": "routing_metadata",
+        "blob_snapshot": "routing_metadata",
+        "key_snapshot": "routing_metadata",
+        "ledger_high_water": "routing_metadata",
+        "created_at": "routing_metadata",
+        "complete": "routing_metadata",
+        "hashes": "routing_metadata"
+      }
+    }
+  ],
+  "blobs": {
+    "lab_original": "envelope_encrypted",
+    "curves": "envelope_encrypted",
+    "ocr_review": "envelope_encrypted",
+    "report_pdf": "envelope_encrypted",
+    "owner_archive_parts": "envelope_encrypted",
+    "parser_scratch": "bounded_tmpfs_plaintext",
+    "backup_set": "restic_encrypted",
+    "openbao_raft": "sealed_key_state",
+    "recovery_shares": "operator_offline_secret"
+  }
+}

@@ -1,0 +1,5015 @@
+{
+  "/api/v1/overview": {
+    "body": {
+      "items": [
+        {
+          "id": "fd720060-a731-5efa-84f8-a75f13604319",
+          "revision_id": "0378a2c2-3c60-5492-8cf4-6e557add3589",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"15df69fdabd273e187a3d9fa461af02434176e28\"",
+          "clinical_date": "2026-10-11",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-11",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "82867006-92cc-5a79-b98f-919e06793fa0",
+          "revision_id": "1b125b91-e970-5672-852f-35dcb9130414",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"a45be64ed191b2f0dab026a8a01e5748525239ac\"",
+          "clinical_date": "2026-10-12",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-12",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "b0dce633-c472-5ac9-b4a5-e750072a4fa8",
+          "revision_id": "794aada0-9038-5439-9aeb-3a25319d5adb",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"9aaf6ea436edc1d036d6477cb0a8609fb054d46a\"",
+          "clinical_date": "2026-10-13",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-13",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "b535162f-1c65-51a6-bf9a-f46dc6f139b1",
+          "revision_id": "0409709e-ebc2-5d7e-9fbe-4ed8d103e843",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"6583a43299bcfea7b5aed3bf966f17ae90169427\"",
+          "clinical_date": "2026-10-14",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-14",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "7b47beaa-97c2-52a4-8582-a7cba568fa26",
+          "revision_id": "2d7d416a-adfe-5ed0-a436-c6dd9301d15b",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"b18b9a46ecae26bb850540171c5682663b7bc345\"",
+          "clinical_date": "2026-10-15",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-15",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "fb974f30-b878-561f-aaa9-46c0dc8e215a",
+          "revision_id": "ed6627df-8714-5eff-b546-df7f4bfee51c",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"c7f8e3cfecb5a34bad19f7f53b1357f19d9629df\"",
+          "clinical_date": "2026-10-16",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-16",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "e2a8c205-f0b0-50af-9ee8-23c63dfc530d",
+          "revision_id": "80a66550-8794-55a1-89d6-2c1dbbf20590",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"d0ea900de02d6c802759bc04696b8aad5ad88903\"",
+          "clinical_date": "2026-10-17",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-17",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "fbd57e2a-7e24-5027-a363-0dd5c595cd25",
+          "revision_id": "fb75e494-ef8b-58b7-9427-a7348717f45e",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"a6b0577af0c6449206fd4b42b38a24063c3dbffe\"",
+          "clinical_date": "2026-10-18",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-18",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "d34e418c-746e-51cf-92ca-28a78fe2967e",
+          "revision_id": "aab23bcc-3958-594e-91ab-19c0dc9b4376",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"f59280acf17aba980850d26ad4513122642b2839\"",
+          "clinical_date": "2026-10-19",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-19",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "2419f400-6922-56ca-9ba2-3fbbfca2dfb0",
+          "revision_id": "48d2178a-9bd1-5253-b695-af559cc61985",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"34057b2a18b383b1a8db62ef3fb2e80660a55f11\"",
+          "clinical_date": "2026-10-20",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-20",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "8b6f065f-b67b-502f-bd76-dc0338900515",
+          "revision_id": "aa894e52-6f80-5a4c-9417-775388e2cfe2",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"b234bad439caad5d9cfa20dafa04a780f96509e0\"",
+          "clinical_date": "2026-10-21",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-21",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "4d2f3cde-4311-5090-9952-6435cf1b8d4a",
+          "revision_id": "871b47e0-fadc-5402-ad2b-3fdbff81a614",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"b8ad33ab6da25de58633ddf040b8bb27a15113d6\"",
+          "clinical_date": "2026-10-22",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-22",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "fca8d023-8906-5c32-86ef-c204201f9d59",
+          "revision_id": "63c82924-9275-5f48-8a14-635a80bb4886",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"5849c418b6a2c7db7bc8bb090d3cbb41eb2a48cd\"",
+          "clinical_date": "2026-10-23",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-23",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "86510968-c8a1-502b-b75a-e45a642e4431",
+          "revision_id": "7805b8ad-64fa-506b-b60e-9d06c2ab7974",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"fc25dcd3998ac66899de1a013e6c112f042569d0\"",
+          "clinical_date": "2026-10-24",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-24",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "b742bee7-ea97-5bb6-ae97-16d6e7d15e2d",
+          "revision_id": "12396a69-d7fd-5591-8cf3-e5d1b755bd38",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"5acbbc86537d23cf02bfb2bc3a8922e787a1f29e\"",
+          "clinical_date": "2026-10-25",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-25",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "fbf8acba-74c0-5260-b968-feef26ab2f6d",
+          "revision_id": "b436eca7-38ea-5c5d-b79f-24b305058d87",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"659b2645eebcea759acb43fd1da9cd7647a2d1ce\"",
+          "clinical_date": "2026-10-26",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-26",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "c887f42e-65bd-5e6c-8038-13b9b6ed550f",
+          "revision_id": "c837f9f6-bd41-5609-b447-1c0d5cef548c",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"9a55c79eb2f1cd40dd23c57ee6e971a6fb05e6fb\"",
+          "clinical_date": "2026-10-27",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-27",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "a9370a10-fa21-582c-9e50-78a97820ad2f",
+          "revision_id": "44bf3e81-c4dc-5885-9019-75385da7d18c",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"2da77be5101a67637e957d2923c17798a401a25c\"",
+          "clinical_date": "2026-10-28",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-28",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "5720c2eb-8aa0-54c4-97e8-fcba2dbacb63",
+          "revision_id": "b032c141-76b1-5b84-b23c-6c05452cf3a4",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"f479cf45b4423831edcc0c409d25f6294e4a4603\"",
+          "clinical_date": "2026-10-29",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-29",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "53978410-e479-50ed-a63f-2e2802e854f7",
+          "revision_id": "62ce9394-9d4a-521c-a3c6-9800f9939637",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"a439c8c0cf0de9cd7e497036b0dbcb5bb7d17ffd\"",
+          "clinical_date": "2026-10-30",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-30",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "36a19e17-5bab-5c50-a955-8316295a83b6",
+          "revision_id": "be9bbe7d-cd70-5358-9708-f944f6742c1f",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"db51e5ce16cc93441d4f698991ba94ad3717443b\"",
+          "clinical_date": "2026-10-31",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-10-31",
+            "time_precision": "day",
+            "value": "157.0",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.21400209",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "157",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "5f3b0346-79db-5ae9-88af-9f92217ff7da",
+          "revision_id": "0a12835e-7e0c-5181-b823-67fd81d90a47",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"90aecdf345356d7c2bb0486c0d1acd072df17b89\"",
+          "clinical_date": "2026-11-01",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-01",
+            "time_precision": "day",
+            "value": "156.5",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "70.987205905",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.5",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "2040cf59-53c4-5c95-98db-df70655772c9",
+          "revision_id": "fc265846-656c-56a4-9166-5be4a399d3eb",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"38d0d8803ce623d3f5db60ab075c34fbd4922f2c\"",
+          "clinical_date": "2026-11-02",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-02",
+            "time_precision": "day",
+            "value": "156.7",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.077924379",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.7",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "a8c50d30-3b04-56e9-a9d8-ad9af82a1a43",
+          "revision_id": "43f9c0a0-d661-5843-9820-df109ed37957",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"2b030f436fd8e9dc8f9a1afd9531d983a76121b0\"",
+          "clinical_date": "2026-11-03",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-03",
+            "time_precision": "day",
+            "value": "156.8",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.123283616",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.8",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "1d45caf2-6447-5cd4-9db2-7f4c225e0045",
+          "revision_id": "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"caf3201e4e74d2a1c2bbe472ab501e17a17e1f3a\"",
+          "clinical_date": "2026-11-04",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-04",
+            "time_precision": "day",
+            "value": "156.6",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.032565142",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.6",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "b11ba8db-f77f-596e-8f52-ed17ad80e246",
+          "revision_id": "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"757a45aa0442f5a0eb6c3be0216ebdd4fa890bd1\"",
+          "clinical_date": "2026-11-05",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-05",
+            "time_precision": "day",
+            "value": "156.7",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.077924379",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.7",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "1d64b838-ecdd-5601-8dfe-33e707a95354",
+          "revision_id": "95111d12-8156-5ea9-aceb-ef9a975c6266",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"a522e1daafa30416023a371b35f55f17ff37d50a\"",
+          "clinical_date": "2026-11-06",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-06",
+            "time_precision": "day",
+            "value": "156.7",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "71.077924379",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.7",
+            "display_unit": "lb"
+          }
+        },
+        {
+          "id": "3c6e99b4-6478-5189-9fb6-bb78ede7f816",
+          "revision_id": "a3c023c3-aaf4-598e-b51d-021f0fa0b7d5",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"f908b90a5f4344cec10b87382471770adae826a3\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "value": "156.2",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "70.851128194",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1",
+            "display_value": "156.2",
+            "display_unit": "lb"
+          }
+        }
+      ],
+      "cursor": null,
+      "date": "2026-11-07",
+      "representative_etag": "\"7d763e1c6d0584585eea899587bd28169f4222ba\"",
+      "representative_id": "3c6e99b4-6478-5189-9fb6-bb78ede7f816",
+      "seven_day_mean": {
+        "value": "71.032565142",
+        "eligible": true,
+        "contributor_day_count": 7,
+        "absent_reason": null,
+        "method_version": "weight-mean-7d-v1",
+        "p25": null,
+        "p75": null,
+        "band_label": "Middle 50% of observed readings",
+        "revision_ids": [
+          "0a12835e-7e0c-5181-b823-67fd81d90a47",
+          "fc265846-656c-56a4-9166-5be4a399d3eb",
+          "43f9c0a0-d661-5843-9820-df109ed37957",
+          "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+          "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+          "95111d12-8156-5ea9-aceb-ef9a975c6266",
+          "a3c023c3-aaf4-598e-b51d-021f0fa0b7d5"
+        ],
+        "display_unit": "lb",
+        "display_value": "156.6",
+        "display_p25": null,
+        "display_p75": null
+      },
+      "recent_baseline": {
+        "value": "71.21400209",
+        "eligible": true,
+        "contributor_day_count": 27,
+        "absent_reason": null,
+        "method_version": "recent-median-28d-v1",
+        "p25": "71.21400209",
+        "p75": "71.21400209",
+        "band_label": "Middle 50% of observed readings",
+        "revision_ids": [
+          "0378a2c2-3c60-5492-8cf4-6e557add3589",
+          "1b125b91-e970-5672-852f-35dcb9130414",
+          "794aada0-9038-5439-9aeb-3a25319d5adb",
+          "0409709e-ebc2-5d7e-9fbe-4ed8d103e843",
+          "2d7d416a-adfe-5ed0-a436-c6dd9301d15b",
+          "ed6627df-8714-5eff-b546-df7f4bfee51c",
+          "80a66550-8794-55a1-89d6-2c1dbbf20590",
+          "fb75e494-ef8b-58b7-9427-a7348717f45e",
+          "aab23bcc-3958-594e-91ab-19c0dc9b4376",
+          "48d2178a-9bd1-5253-b695-af559cc61985",
+          "aa894e52-6f80-5a4c-9417-775388e2cfe2",
+          "871b47e0-fadc-5402-ad2b-3fdbff81a614",
+          "63c82924-9275-5f48-8a14-635a80bb4886",
+          "7805b8ad-64fa-506b-b60e-9d06c2ab7974",
+          "12396a69-d7fd-5591-8cf3-e5d1b755bd38",
+          "b436eca7-38ea-5c5d-b79f-24b305058d87",
+          "c837f9f6-bd41-5609-b447-1c0d5cef548c",
+          "44bf3e81-c4dc-5885-9019-75385da7d18c",
+          "b032c141-76b1-5b84-b23c-6c05452cf3a4",
+          "62ce9394-9d4a-521c-a3c6-9800f9939637",
+          "be9bbe7d-cd70-5358-9708-f944f6742c1f",
+          "0a12835e-7e0c-5181-b823-67fd81d90a47",
+          "fc265846-656c-56a4-9166-5be4a399d3eb",
+          "43f9c0a0-d661-5843-9820-df109ed37957",
+          "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+          "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+          "95111d12-8156-5ea9-aceb-ef9a975c6266"
+        ],
+        "series_definitions": {
+          "244c2f9c5454046b286bd4ab3d5d04dcd9fdff3715a32a965fb8e5efbf3d9e59": {
+            "metric": "weight",
+            "source_type": "manual",
+            "device": "manual",
+            "statistic": "designated_morning",
+            "algorithm_version": "mass-v1",
+            "profile_revision": null,
+            "unit": "kg",
+            "slot": null
+          }
+        },
+        "display_unit": "lb",
+        "display_value": "157",
+        "display_p25": "157",
+        "display_p75": "157"
+      },
+      "composition": [
+        {
+          "key": "weight",
+          "label": "weight",
+          "unit": "kg",
+          "value_kind": "decimal",
+          "capability_status": "implemented",
+          "chart_eligible": true,
+          "baseline_eligible": true,
+          "allowed_source_types": [
+            "manual",
+            "imported_file"
+          ],
+          "requirements": [],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "reported",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_data",
+          "absent_reason": "not_recorded"
+        },
+        {
+          "key": "bmi",
+          "label": "bmi",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "body_fat_percent",
+          "label": "body fat percent",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "fat_free_weight",
+          "label": "fat free weight",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "subcutaneous_fat_percent",
+          "label": "subcutaneous fat percent",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "visceral_fat_index",
+          "label": "visceral fat index",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "body_water_percent",
+          "label": "body water percent",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "skeletal_muscle_percent",
+          "label": "skeletal muscle percent",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "muscle_mass",
+          "label": "muscle mass",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "bone_mass",
+          "label": "bone mass",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "protein_percent",
+          "label": "protein percent",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "bmr",
+          "label": "bmr",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        },
+        {
+          "key": "metabolic_age",
+          "label": "metabolic age",
+          "unit": null,
+          "value_kind": "decimal",
+          "capability_status": "planned",
+          "chart_eligible": false,
+          "baseline_eligible": false,
+          "allowed_source_types": [],
+          "requirements": [
+            "verified_adapter"
+          ],
+          "allowed_views": [
+            "owner",
+            "scoped_doctor"
+          ],
+          "qualification": "unqualified",
+          "interpretation": "Reported observation; no diagnosis or treatment inference.",
+          "source_key_aliases": [],
+          "statistic": null,
+          "validation": {},
+          "display_precision": 2,
+          "value": null,
+          "availability": "awaiting_integration",
+          "absent_reason": "awaiting_integration"
+        }
+      ],
+      "delta": {
+        "value": "-0.362873896",
+        "unit": "kg",
+        "display_value": "-0.8",
+        "display_unit": "lb",
+        "comparison_in_reference_period": false,
+        "calculation_state": "current"
+      }
+    },
+    "breathing": {
+      "items": [
+        {
+          "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+          "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+          "kind": "pulmonary",
+          "version": 1,
+          "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "measured_start": null,
+            "measured_end": null,
+            "timezone": null,
+            "original_offset_minutes": null,
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "capture_status": "not_applicable",
+            "slot": "morning",
+            "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+            "values": {
+              "fev1": "3.82",
+              "fvc": "4.87",
+              "pef": "510",
+              "fev1_fvc": "78.439425051334702259"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "fev6": "L",
+              "vext": "L",
+              "fivc": "L",
+              "pef": "L/min",
+              "fef2575": "L/s",
+              "fef25": "L/s",
+              "fef50": "L/s",
+              "fef75": "L/s",
+              "pif": "L/s",
+              "fet": "s",
+              "fev1_fvc": "%"
+            },
+            "ratio_method": "same-trial-ratio-v1",
+            "curves": null,
+            "curve_absent_reason": "not_recorded",
+            "synthetic_only": true
+          }
+        }
+      ],
+      "cursor": null,
+      "history": [
+        {
+          "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+          "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+          "kind": "pulmonary",
+          "version": 1,
+          "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "measured_start": null,
+            "measured_end": null,
+            "timezone": null,
+            "original_offset_minutes": null,
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "capture_status": "not_applicable",
+            "slot": "morning",
+            "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+            "values": {
+              "fev1": "3.82",
+              "fvc": "4.87",
+              "pef": "510",
+              "fev1_fvc": "78.439425051334702259"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "fev6": "L",
+              "vext": "L",
+              "fivc": "L",
+              "pef": "L/min",
+              "fef2575": "L/s",
+              "fef25": "L/s",
+              "fef50": "L/s",
+              "fef75": "L/s",
+              "pif": "L/s",
+              "fet": "s",
+              "fev1_fvc": "%"
+            },
+            "ratio_method": "same-trial-ratio-v1",
+            "curves": null,
+            "curve_absent_reason": "not_recorded",
+            "synthetic_only": true
+          }
+        }
+      ],
+      "date": "2026-11-07",
+      "slot": "morning",
+      "minimum_sessions": 1,
+      "saved_session_count": 1,
+      "minimum_met": true,
+      "preferred_met": false,
+      "slot_coverage": [
+        "morning"
+      ],
+      "coverage_complete": true,
+      "selected_session": {
+        "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+        "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+        "kind": "pulmonary",
+        "version": 1,
+        "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "measured_start": null,
+          "measured_end": null,
+          "timezone": null,
+          "original_offset_minutes": null,
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "capture_status": "not_applicable",
+          "slot": "morning",
+          "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+          "values": {
+            "fev1": "3.82",
+            "fvc": "4.87",
+            "pef": "510",
+            "fev1_fvc": "78.439425051334702259"
+          },
+          "units": {
+            "fvc": "L",
+            "fev1": "L",
+            "fev6": "L",
+            "vext": "L",
+            "fivc": "L",
+            "pef": "L/min",
+            "fef2575": "L/s",
+            "fef25": "L/s",
+            "fef50": "L/s",
+            "fef75": "L/s",
+            "pif": "L/s",
+            "fet": "s",
+            "fev1_fvc": "%"
+          },
+          "ratio_method": "same-trial-ratio-v1",
+          "curves": null,
+          "curve_absent_reason": "not_recorded",
+          "synthetic_only": true
+        }
+      },
+      "recent_baselines": {
+        "fvc": {
+          "value": null,
+          "eligible": false,
+          "contributor_day_count": 0,
+          "absent_reason": "not_enough_eligible_data",
+          "method_version": "recent-median-28d-v1",
+          "p25": null,
+          "p75": null,
+          "band_label": "Middle 50% of observed readings",
+          "revision_ids": [],
+          "series_definitions": {}
+        },
+        "fev1": {
+          "value": null,
+          "eligible": false,
+          "contributor_day_count": 0,
+          "absent_reason": "not_enough_eligible_data",
+          "method_version": "recent-median-28d-v1",
+          "p25": null,
+          "p75": null,
+          "band_label": "Middle 50% of observed readings",
+          "revision_ids": [],
+          "series_definitions": {}
+        },
+        "pef": {
+          "value": null,
+          "eligible": false,
+          "contributor_day_count": 0,
+          "absent_reason": "not_enough_eligible_data",
+          "method_version": "recent-median-28d-v1",
+          "p25": null,
+          "p75": null,
+          "band_label": "Middle 50% of observed readings",
+          "revision_ids": [],
+          "series_definitions": {}
+        }
+      }
+    },
+    "sleep_activity": {
+      "date": "2026-11-07",
+      "availability": "available",
+      "sleep": {
+        "id": "a36ada64-4059-5c1f-bc4d-2975020a1102",
+        "revision_id": "9312d599-febc-5aab-b9c0-2fa6d1fd3721",
+        "kind": "sleep",
+        "version": 1,
+        "etag": "\"088fad89f01856d6c423036a339ab3ad769c5a54\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "source_type": "direct_device",
+          "validity": "valid",
+          "synthetic_only": true,
+          "complete": true,
+          "main_session": true,
+          "measured_start": "2026-11-06T21:00:00-05:00",
+          "measured_end": "2026-11-07T04:30:00-05:00",
+          "timezone": "UTC",
+          "stages": [
+            {
+              "start": "2026-11-06T21:00:00-05:00",
+              "end": "2026-11-07T00:46:00-05:00",
+              "stage": "light"
+            },
+            {
+              "start": "2026-11-07T00:46:00-05:00",
+              "end": "2026-11-07T01:10:00-05:00",
+              "stage": "awake"
+            },
+            {
+              "start": "2026-11-07T01:10:00-05:00",
+              "end": "2026-11-07T02:20:00-05:00",
+              "stage": "deep"
+            },
+            {
+              "start": "2026-11-07T02:20:00-05:00",
+              "end": "2026-11-07T04:12:00-05:00",
+              "stage": "rem"
+            },
+            {
+              "start": "2026-11-07T04:12:00-05:00",
+              "end": "2026-11-07T04:30:00-05:00",
+              "stage": "unknown"
+            }
+          ]
+        },
+        "stage_summary": {
+          "span_seconds": 27000,
+          "stage_seconds": {
+            "light": 13560,
+            "deep": 4200,
+            "rem": 6720,
+            "awake": 1440,
+            "unknown": 1080
+          },
+          "known_sleep_seconds": 24480,
+          "observed_awakenings": 1,
+          "method_version": "stage-interval-v1"
+        }
+      },
+      "sleep_sessions": [
+        {
+          "id": "a36ada64-4059-5c1f-bc4d-2975020a1102",
+          "revision_id": "9312d599-febc-5aab-b9c0-2fa6d1fd3721",
+          "kind": "sleep",
+          "version": 1,
+          "etag": "\"088fad89f01856d6c423036a339ab3ad769c5a54\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "source_type": "direct_device",
+            "validity": "valid",
+            "synthetic_only": true,
+            "complete": true,
+            "main_session": true,
+            "measured_start": "2026-11-06T21:00:00-05:00",
+            "measured_end": "2026-11-07T04:30:00-05:00",
+            "timezone": "UTC",
+            "stages": [
+              {
+                "start": "2026-11-06T21:00:00-05:00",
+                "end": "2026-11-07T00:46:00-05:00",
+                "stage": "light"
+              },
+              {
+                "start": "2026-11-07T00:46:00-05:00",
+                "end": "2026-11-07T01:10:00-05:00",
+                "stage": "awake"
+              },
+              {
+                "start": "2026-11-07T01:10:00-05:00",
+                "end": "2026-11-07T02:20:00-05:00",
+                "stage": "deep"
+              },
+              {
+                "start": "2026-11-07T02:20:00-05:00",
+                "end": "2026-11-07T04:12:00-05:00",
+                "stage": "rem"
+              },
+              {
+                "start": "2026-11-07T04:12:00-05:00",
+                "end": "2026-11-07T04:30:00-05:00",
+                "stage": "unknown"
+              }
+            ]
+          },
+          "stage_summary": {
+            "span_seconds": 27000,
+            "stage_seconds": {
+              "light": 13560,
+              "deep": 4200,
+              "rem": 6720,
+              "awake": 1440,
+              "unknown": 1080
+            },
+            "known_sleep_seconds": 24480,
+            "observed_awakenings": 1,
+            "method_version": "stage-interval-v1"
+          }
+        }
+      ],
+      "sleep_absent_reason": null,
+      "observation_series": [
+        {
+          "series_id": "a883347e844970ca8c3dd9f63ec234c41917cfad0032a715d2ddf713413fc008",
+          "metric_id": "phone_steps",
+          "unit": "count",
+          "qualification": null,
+          "statistic": null,
+          "points": [
+            {
+              "id": "e4f7ac02-f228-5d7f-bf90-ada36e05c3a6",
+              "revision_id": "7eac1f15-87e3-5529-a2a5-5e28f09ef57b",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"0608adb81466bbf3196bcf0dbd26b3fbd52a181c\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "phone_recording",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "phone_steps",
+                "value": "7420",
+                "unit": "count",
+                "measured_start": "2026-11-07T05:00:00-05:00",
+                "measured_end": "2026-11-07T19:00:00-05:00",
+                "timezone": "UTC"
+              }
+            }
+          ],
+          "daily_summary": {
+            "value": null,
+            "absent_reason": "insufficient_coverage"
+          }
+        },
+        {
+          "series_id": "8b96c0052f8f990fdc1264f8ef7b9ecb8f3c5d60c2619e41106464ca8eb602a1",
+          "metric_id": "bpm",
+          "unit": "beats/min",
+          "qualification": "reported",
+          "statistic": "requested_sample",
+          "points": [
+            {
+              "id": "866bdb30-8f2b-5336-831d-8effc5b0df78",
+              "revision_id": "3910f307-bdef-5cc6-8767-236cd1774f6f",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"1022feae1c84246e765a529c920314a169fb65de\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T05:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "e5ea9b08-7188-54f7-8bf2-8d697b12ca75",
+              "revision_id": "ff2da063-699d-5f47-982e-ea8c1b514435",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"9888178cd38db83b6e98d2f3d387d206834bfb78\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T05:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "73e5f986-e7fb-57a3-b7f4-50aedbedcdb5",
+              "revision_id": "b6e91dbb-3001-5311-ad15-65dea688729b",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"f4d5d086f6f1e1ad9cf174a56fe06c6042646c6d\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T05:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "31864b86-6a1b-5226-ada0-8f446715cb0b",
+              "revision_id": "44b20102-544d-5af4-b0b1-b4f2104c4c2d",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"dd8a35176de4cd1f992dbe6f1facb02d010c538a\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T05:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "8bfd41df-835a-534b-8cdb-f89ff78fa951",
+              "revision_id": "023a26da-80bd-55e8-8589-a4eb5534747a",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"9b5deaa298b47cc94536282ef4383bf6a8566524\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T06:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "7289503c-1025-53fc-93c5-b2ca0561019a",
+              "revision_id": "2b506c48-e21f-5882-a1b0-19c1ec8535cd",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"a528b7a3d7a0cfb0c831ada2675c6dec76e045bd\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T06:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "6d0a9e39-06ae-58de-9e10-d0940359cf83",
+              "revision_id": "55453eb6-e21e-5c79-84ae-e6c63bf2d777",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"5a65fe07e920d3248f84ed09044e3059ed078b7d\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T06:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "36b308a3-ea23-59a5-8043-1703fc221d28",
+              "revision_id": "ae59eb0e-8985-5773-81de-3bafa6886d32",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"1a3e1acc69b3f91a360fa53631b480813ebe146c\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T06:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "81f55a8e-8f34-55e4-8f20-970b2d227167",
+              "revision_id": "39ff7847-b229-5bc3-a65b-12ba3ec5ec27",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"a242fae2a5e3b92728e8aa352f1e23fb325ac39a\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T07:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "5e83db00-3faa-5c6e-89a7-9a924a57fddd",
+              "revision_id": "299cfdb2-e031-5c8a-9571-3cbadcde6d7d",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"6c93492a81da895b978c5118185b3efc40d2f604\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T07:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "03e536b3-b39f-50d2-a215-b76ff78de3bd",
+              "revision_id": "f2218e6e-5f76-5d2e-92d3-70287e711efb",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"f46a696276bfedc1a978fa8fe0d02f2d45c7d345\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T07:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "e97e96e5-05f4-5084-a716-34aa8c876038",
+              "revision_id": "5b1e66fa-e2bf-51aa-b816-567901d5aa40",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"61c61b4494bf9acaf64ceab03d325ed5693a3abc\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T07:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "e8c4e24b-1c01-56e7-8c6d-b7967dad332a",
+              "revision_id": "496a46be-ff21-5879-b476-e2f654518bfe",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"79701898807436cf541ccae465080fbf11145f94\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T08:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "29637f47-69bd-584c-8cf4-16b176fb0e44",
+              "revision_id": "e444dba4-f923-5095-89b1-abfee9a05e0f",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"cfe7969911974ffc022e6f02cee1440978051e72\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T08:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "e93cc8a5-0646-5fc9-8fad-ce2a749b7cfa",
+              "revision_id": "1033acad-613c-5c3c-92ab-98b65c3b6167",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"db95e8f205e519570971dff740c90e10e74f62f9\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T08:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "036d5332-d7ec-5ba2-9e50-ac0be717ea7a",
+              "revision_id": "188830da-2566-5e8c-8bb1-84cd8f6b394e",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"5b1a702d6b07cf9d28fb21ccaa8d7da2c5a6e8da\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T08:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "826d47b9-cb65-5d64-8adc-2b4a6ed303ad",
+              "revision_id": "8f259f8b-2ad3-5f6f-9dca-ddcbe859e21e",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"35e6e3571ab65f7687a9ebdefa7c2b85d76f3da6\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T09:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "8ce7d646-5502-569b-82e5-8cf263297549",
+              "revision_id": "d1569de8-be28-5a18-8e51-037a4a8dd15c",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"6e732396fa4eda0a101170bb42ce476f2202df36\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T09:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "7f5c204f-785a-5a53-8956-bae26c500c18",
+              "revision_id": "1d78a2b6-8384-582d-8151-1c95c2aa9f9f",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"7a9b5557216e48dfc427c3df552c7a0bc506e7ac\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T09:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "317f41a6-5617-5572-b538-4eed8954c7ab",
+              "revision_id": "41e62e18-a093-57ac-a7b4-afa1b90a89d3",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"2ffade08bd8d6ed7f2b116efb952ee2cbdb13de1\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T09:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "ac39cd6b-6737-5765-a09c-2b0615f9f886",
+              "revision_id": "f1f9cd9d-49c0-5fdb-b230-928d3f5d66c2",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"b72c5386dac081497f0b31c4c18594a07ad9151d\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T10:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "fcdae7cf-1482-59f9-9026-cc89c07a9a47",
+              "revision_id": "4c179533-e650-5561-aa60-3c968ce37e25",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"bfa4e317624405f50ac4561f64637ff1b9871176\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T10:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "11a4b025-385a-5b5e-8cb2-099541028b13",
+              "revision_id": "4722537f-92ae-5d5b-b58c-69f7c7ada560",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"002526ba36f9fec51c59697d4563b3432e7df647\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T10:30:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "4cb10b45-49a8-5a23-b634-9a4013ee7a97",
+              "revision_id": "60a81caf-2914-5c14-9866-f4f36aa97d37",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"40e0d594885d8f487aad2ae0e7a6d20ed707ac20\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T10:45:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "397dad14-7896-5ad5-9e0b-5220db453f12",
+              "revision_id": "758691ad-8cd8-5d01-bbe0-663ce202effe",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"aa53c213c3182706f87e2c8fa85c4539b2d9d507\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T11:00:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "4c203409-361e-568e-a7ee-0e770723dbe7",
+              "revision_id": "a6f49819-4241-5e81-99f3-662467e27e62",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"54828eb1586d96e5b8e5f9cd5b794836e892ce56\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T11:15:00-05:00",
+                "timezone": "UTC"
+              }
+            },
+            {
+              "id": "c43af0b0-c160-5e75-9a16-04a9a57388c6",
+              "revision_id": "48b0e8e6-9a47-5f87-8f70-18b3ccf6b729",
+              "kind": "observation",
+              "version": 1,
+              "etag": "\"b9dc27dd97b52b1e0329e188d05d66b8e13b05fb\"",
+              "clinical_date": "2026-11-07",
+              "received_at": "2026-11-07T12:00:00Z",
+              "data": {
+                "clinical_date": "2026-11-07",
+                "time_precision": "day",
+                "source_type": "direct_device",
+                "validity": "valid",
+                "synthetic_only": true,
+                "metric_id": "bpm",
+                "statistic": "requested_sample",
+                "value": "68",
+                "unit": "beats/min",
+                "qualification": "reported",
+                "measured_start": "2026-11-07T11:30:00-05:00",
+                "timezone": "UTC"
+              }
+            }
+          ],
+          "daily_summary": {
+            "value": "68",
+            "sample_count": 27,
+            "method_version": "requested-sample-mean-v1",
+            "revision_ids": [
+              "3910f307-bdef-5cc6-8767-236cd1774f6f",
+              "ff2da063-699d-5f47-982e-ea8c1b514435",
+              "b6e91dbb-3001-5311-ad15-65dea688729b",
+              "44b20102-544d-5af4-b0b1-b4f2104c4c2d",
+              "023a26da-80bd-55e8-8589-a4eb5534747a",
+              "2b506c48-e21f-5882-a1b0-19c1ec8535cd",
+              "55453eb6-e21e-5c79-84ae-e6c63bf2d777",
+              "ae59eb0e-8985-5773-81de-3bafa6886d32",
+              "39ff7847-b229-5bc3-a65b-12ba3ec5ec27",
+              "299cfdb2-e031-5c8a-9571-3cbadcde6d7d",
+              "f2218e6e-5f76-5d2e-92d3-70287e711efb",
+              "5b1e66fa-e2bf-51aa-b816-567901d5aa40",
+              "496a46be-ff21-5879-b476-e2f654518bfe",
+              "e444dba4-f923-5095-89b1-abfee9a05e0f",
+              "1033acad-613c-5c3c-92ab-98b65c3b6167",
+              "188830da-2566-5e8c-8bb1-84cd8f6b394e",
+              "8f259f8b-2ad3-5f6f-9dca-ddcbe859e21e",
+              "d1569de8-be28-5a18-8e51-037a4a8dd15c",
+              "1d78a2b6-8384-582d-8151-1c95c2aa9f9f",
+              "41e62e18-a093-57ac-a7b4-afa1b90a89d3",
+              "f1f9cd9d-49c0-5fdb-b230-928d3f5d66c2",
+              "4c179533-e650-5561-aa60-3c968ce37e25",
+              "4722537f-92ae-5d5b-b58c-69f7c7ada560",
+              "60a81caf-2914-5c14-9866-f4f36aa97d37",
+              "758691ad-8cd8-5d01-bbe0-663ce202effe",
+              "a6f49819-4241-5e81-99f3-662467e27e62",
+              "48b0e8e6-9a47-5f87-8f70-18b3ccf6b729"
+            ]
+          }
+        }
+      ],
+      "steps": {
+        "value": 7420,
+        "covered_seconds": 50400,
+        "excluded_intervals": 0,
+        "absent_reason": null,
+        "source": "phone"
+      },
+      "workouts": [
+        {
+          "id": "2e4753e6-12d7-50ef-8147-96df14d0d37e",
+          "revision_id": "282aeec1-eb93-5b95-aa24-3877df57977e",
+          "kind": "workout",
+          "version": 1,
+          "etag": "\"8f8179cedd1a1f06f6e39cd9e55ebabdae4d2243\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "source_type": "manual",
+            "validity": "valid",
+            "synthetic_only": true,
+            "state": "completed",
+            "timezone": "UTC",
+            "intervals": [
+              {
+                "start": "2026-11-07T08:00:00-05:00",
+                "end": "2026-11-07T08:34:00-05:00",
+                "kind": "work"
+              }
+            ]
+          },
+          "daily_duration": {
+            "value": "2040.0",
+            "work_seconds": "2040.0",
+            "unit": "s",
+            "method_version": "completed-work-rest-v1",
+            "absent_reason": null
+          }
+        }
+      ],
+      "cursor": null
+    },
+    "records": {
+      "items": [
+        {
+          "id": "3c6e99b4-6478-5189-9fb6-bb78ede7f816",
+          "revision_id": "a3c023c3-aaf4-598e-b51d-021f0fa0b7d5",
+          "kind": "weight",
+          "version": 1,
+          "etag": "\"f908b90a5f4344cec10b87382471770adae826a3\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "value": "156.2",
+            "unit": "lb",
+            "metric_id": "weight",
+            "canonical_value": "70.851128194",
+            "canonical_unit": "kg",
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "availability": "available",
+            "method_version": "mass-v1"
+          }
+        },
+        {
+          "id": "33f85409-5ebc-52bc-a241-272d537604f3",
+          "revision_id": "87f9fa47-2098-57ad-8b0e-6a29c3629873",
+          "kind": "lab",
+          "version": 1,
+          "etag": "\"ff0aeeec2be2ba9d1fe335b3aee687ff81a4440f\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "source_type": "manual",
+            "validity": "valid",
+            "synthetic_only": true,
+            "label": "Fictional analyte",
+            "raw_result_text": "<5",
+            "value_kind": "numeric",
+            "value": "5",
+            "operator": "lt",
+            "unit": "mg/L",
+            "review_status": "reviewed",
+            "source_report_status": "final"
+          }
+        },
+        {
+          "id": "b0669163-bdc0-5992-9e80-624828069522",
+          "revision_id": "9a765f81-977d-5a96-95ac-b117263b313f",
+          "kind": "lab",
+          "version": 1,
+          "etag": "\"adc7809c55354bb4609918642cadd58682300b11\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "label": "Fictional analyte",
+            "raw_result_text": "5.00",
+            "value_kind": "numeric",
+            "value": "5.00",
+            "operator": "eq",
+            "unit": "mg/L",
+            "reference_text": null,
+            "lab_flag": null,
+            "specimen": null,
+            "method": null,
+            "excluded": false,
+            "exclusion_reason": "",
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "source_type": "imported_file",
+            "qualification": "reported",
+            "validity": "valid",
+            "review_status": "reviewed",
+            "source_report_status": "final",
+            "transcription_method": "extraction_review"
+          }
+        },
+        {
+          "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+          "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+          "kind": "pulmonary",
+          "version": 1,
+          "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "measured_start": null,
+            "measured_end": null,
+            "timezone": null,
+            "original_offset_minutes": null,
+            "source_type": "manual",
+            "qualification": "reported",
+            "validity": "valid",
+            "capture_status": "not_applicable",
+            "slot": "morning",
+            "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+            "values": {
+              "fev1": "3.82",
+              "fvc": "4.87",
+              "pef": "510",
+              "fev1_fvc": "78.439425051334702259"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "fev6": "L",
+              "vext": "L",
+              "fivc": "L",
+              "pef": "L/min",
+              "fef2575": "L/s",
+              "fef25": "L/s",
+              "fef50": "L/s",
+              "fef75": "L/s",
+              "pif": "L/s",
+              "fet": "s",
+              "fev1_fvc": "%"
+            },
+            "ratio_method": "same-trial-ratio-v1",
+            "curves": null,
+            "curve_absent_reason": "not_recorded",
+            "synthetic_only": true
+          }
+        }
+      ],
+      "cursor": null
+    },
+    "calculation_state": "current_authorized_inputs"
+  },
+  "/api/v1/body": {
+    "items": [
+      {
+        "id": "fd720060-a731-5efa-84f8-a75f13604319",
+        "revision_id": "0378a2c2-3c60-5492-8cf4-6e557add3589",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"15df69fdabd273e187a3d9fa461af02434176e28\"",
+        "clinical_date": "2026-10-11",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-11",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "82867006-92cc-5a79-b98f-919e06793fa0",
+        "revision_id": "1b125b91-e970-5672-852f-35dcb9130414",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"a45be64ed191b2f0dab026a8a01e5748525239ac\"",
+        "clinical_date": "2026-10-12",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-12",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "b0dce633-c472-5ac9-b4a5-e750072a4fa8",
+        "revision_id": "794aada0-9038-5439-9aeb-3a25319d5adb",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"9aaf6ea436edc1d036d6477cb0a8609fb054d46a\"",
+        "clinical_date": "2026-10-13",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-13",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "b535162f-1c65-51a6-bf9a-f46dc6f139b1",
+        "revision_id": "0409709e-ebc2-5d7e-9fbe-4ed8d103e843",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"6583a43299bcfea7b5aed3bf966f17ae90169427\"",
+        "clinical_date": "2026-10-14",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-14",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "7b47beaa-97c2-52a4-8582-a7cba568fa26",
+        "revision_id": "2d7d416a-adfe-5ed0-a436-c6dd9301d15b",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"b18b9a46ecae26bb850540171c5682663b7bc345\"",
+        "clinical_date": "2026-10-15",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-15",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "fb974f30-b878-561f-aaa9-46c0dc8e215a",
+        "revision_id": "ed6627df-8714-5eff-b546-df7f4bfee51c",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"c7f8e3cfecb5a34bad19f7f53b1357f19d9629df\"",
+        "clinical_date": "2026-10-16",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-16",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "e2a8c205-f0b0-50af-9ee8-23c63dfc530d",
+        "revision_id": "80a66550-8794-55a1-89d6-2c1dbbf20590",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"d0ea900de02d6c802759bc04696b8aad5ad88903\"",
+        "clinical_date": "2026-10-17",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-17",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "fbd57e2a-7e24-5027-a363-0dd5c595cd25",
+        "revision_id": "fb75e494-ef8b-58b7-9427-a7348717f45e",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"a6b0577af0c6449206fd4b42b38a24063c3dbffe\"",
+        "clinical_date": "2026-10-18",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-18",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "d34e418c-746e-51cf-92ca-28a78fe2967e",
+        "revision_id": "aab23bcc-3958-594e-91ab-19c0dc9b4376",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"f59280acf17aba980850d26ad4513122642b2839\"",
+        "clinical_date": "2026-10-19",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-19",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "2419f400-6922-56ca-9ba2-3fbbfca2dfb0",
+        "revision_id": "48d2178a-9bd1-5253-b695-af559cc61985",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"34057b2a18b383b1a8db62ef3fb2e80660a55f11\"",
+        "clinical_date": "2026-10-20",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-20",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "8b6f065f-b67b-502f-bd76-dc0338900515",
+        "revision_id": "aa894e52-6f80-5a4c-9417-775388e2cfe2",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"b234bad439caad5d9cfa20dafa04a780f96509e0\"",
+        "clinical_date": "2026-10-21",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-21",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "4d2f3cde-4311-5090-9952-6435cf1b8d4a",
+        "revision_id": "871b47e0-fadc-5402-ad2b-3fdbff81a614",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"b8ad33ab6da25de58633ddf040b8bb27a15113d6\"",
+        "clinical_date": "2026-10-22",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-22",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "fca8d023-8906-5c32-86ef-c204201f9d59",
+        "revision_id": "63c82924-9275-5f48-8a14-635a80bb4886",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"5849c418b6a2c7db7bc8bb090d3cbb41eb2a48cd\"",
+        "clinical_date": "2026-10-23",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-23",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "86510968-c8a1-502b-b75a-e45a642e4431",
+        "revision_id": "7805b8ad-64fa-506b-b60e-9d06c2ab7974",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"fc25dcd3998ac66899de1a013e6c112f042569d0\"",
+        "clinical_date": "2026-10-24",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-24",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "b742bee7-ea97-5bb6-ae97-16d6e7d15e2d",
+        "revision_id": "12396a69-d7fd-5591-8cf3-e5d1b755bd38",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"5acbbc86537d23cf02bfb2bc3a8922e787a1f29e\"",
+        "clinical_date": "2026-10-25",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-25",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "fbf8acba-74c0-5260-b968-feef26ab2f6d",
+        "revision_id": "b436eca7-38ea-5c5d-b79f-24b305058d87",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"659b2645eebcea759acb43fd1da9cd7647a2d1ce\"",
+        "clinical_date": "2026-10-26",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-26",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "c887f42e-65bd-5e6c-8038-13b9b6ed550f",
+        "revision_id": "c837f9f6-bd41-5609-b447-1c0d5cef548c",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"9a55c79eb2f1cd40dd23c57ee6e971a6fb05e6fb\"",
+        "clinical_date": "2026-10-27",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-27",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "a9370a10-fa21-582c-9e50-78a97820ad2f",
+        "revision_id": "44bf3e81-c4dc-5885-9019-75385da7d18c",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"2da77be5101a67637e957d2923c17798a401a25c\"",
+        "clinical_date": "2026-10-28",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-28",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "5720c2eb-8aa0-54c4-97e8-fcba2dbacb63",
+        "revision_id": "b032c141-76b1-5b84-b23c-6c05452cf3a4",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"f479cf45b4423831edcc0c409d25f6294e4a4603\"",
+        "clinical_date": "2026-10-29",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-29",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "53978410-e479-50ed-a63f-2e2802e854f7",
+        "revision_id": "62ce9394-9d4a-521c-a3c6-9800f9939637",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"a439c8c0cf0de9cd7e497036b0dbcb5bb7d17ffd\"",
+        "clinical_date": "2026-10-30",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-30",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "36a19e17-5bab-5c50-a955-8316295a83b6",
+        "revision_id": "be9bbe7d-cd70-5358-9708-f944f6742c1f",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"db51e5ce16cc93441d4f698991ba94ad3717443b\"",
+        "clinical_date": "2026-10-31",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-10-31",
+          "time_precision": "day",
+          "value": "157.0",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.21400209",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "157",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "5f3b0346-79db-5ae9-88af-9f92217ff7da",
+        "revision_id": "0a12835e-7e0c-5181-b823-67fd81d90a47",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"90aecdf345356d7c2bb0486c0d1acd072df17b89\"",
+        "clinical_date": "2026-11-01",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-01",
+          "time_precision": "day",
+          "value": "156.5",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "70.987205905",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.5",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "2040cf59-53c4-5c95-98db-df70655772c9",
+        "revision_id": "fc265846-656c-56a4-9166-5be4a399d3eb",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"38d0d8803ce623d3f5db60ab075c34fbd4922f2c\"",
+        "clinical_date": "2026-11-02",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-02",
+          "time_precision": "day",
+          "value": "156.7",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.077924379",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.7",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "a8c50d30-3b04-56e9-a9d8-ad9af82a1a43",
+        "revision_id": "43f9c0a0-d661-5843-9820-df109ed37957",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"2b030f436fd8e9dc8f9a1afd9531d983a76121b0\"",
+        "clinical_date": "2026-11-03",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-03",
+          "time_precision": "day",
+          "value": "156.8",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.123283616",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.8",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "1d45caf2-6447-5cd4-9db2-7f4c225e0045",
+        "revision_id": "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"caf3201e4e74d2a1c2bbe472ab501e17a17e1f3a\"",
+        "clinical_date": "2026-11-04",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-04",
+          "time_precision": "day",
+          "value": "156.6",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.032565142",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.6",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "b11ba8db-f77f-596e-8f52-ed17ad80e246",
+        "revision_id": "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"757a45aa0442f5a0eb6c3be0216ebdd4fa890bd1\"",
+        "clinical_date": "2026-11-05",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-05",
+          "time_precision": "day",
+          "value": "156.7",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.077924379",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.7",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "1d64b838-ecdd-5601-8dfe-33e707a95354",
+        "revision_id": "95111d12-8156-5ea9-aceb-ef9a975c6266",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"a522e1daafa30416023a371b35f55f17ff37d50a\"",
+        "clinical_date": "2026-11-06",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-06",
+          "time_precision": "day",
+          "value": "156.7",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "71.077924379",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.7",
+          "display_unit": "lb"
+        }
+      },
+      {
+        "id": "3c6e99b4-6478-5189-9fb6-bb78ede7f816",
+        "revision_id": "a3c023c3-aaf4-598e-b51d-021f0fa0b7d5",
+        "kind": "weight",
+        "version": 1,
+        "etag": "\"f908b90a5f4344cec10b87382471770adae826a3\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "value": "156.2",
+          "unit": "lb",
+          "metric_id": "weight",
+          "canonical_value": "70.851128194",
+          "canonical_unit": "kg",
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "availability": "available",
+          "method_version": "mass-v1",
+          "display_value": "156.2",
+          "display_unit": "lb"
+        }
+      }
+    ],
+    "cursor": null,
+    "date": "2026-11-07",
+    "representative_etag": "\"7d763e1c6d0584585eea899587bd28169f4222ba\"",
+    "representative_id": "3c6e99b4-6478-5189-9fb6-bb78ede7f816",
+    "seven_day_mean": {
+      "value": "71.032565142",
+      "eligible": true,
+      "contributor_day_count": 7,
+      "absent_reason": null,
+      "method_version": "weight-mean-7d-v1",
+      "p25": null,
+      "p75": null,
+      "band_label": "Middle 50% of observed readings",
+      "revision_ids": [
+        "0a12835e-7e0c-5181-b823-67fd81d90a47",
+        "fc265846-656c-56a4-9166-5be4a399d3eb",
+        "43f9c0a0-d661-5843-9820-df109ed37957",
+        "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+        "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+        "95111d12-8156-5ea9-aceb-ef9a975c6266",
+        "a3c023c3-aaf4-598e-b51d-021f0fa0b7d5"
+      ],
+      "display_unit": "lb",
+      "display_value": "156.6",
+      "display_p25": null,
+      "display_p75": null
+    },
+    "recent_baseline": {
+      "value": "71.21400209",
+      "eligible": true,
+      "contributor_day_count": 27,
+      "absent_reason": null,
+      "method_version": "recent-median-28d-v1",
+      "p25": "71.21400209",
+      "p75": "71.21400209",
+      "band_label": "Middle 50% of observed readings",
+      "revision_ids": [
+        "0378a2c2-3c60-5492-8cf4-6e557add3589",
+        "1b125b91-e970-5672-852f-35dcb9130414",
+        "794aada0-9038-5439-9aeb-3a25319d5adb",
+        "0409709e-ebc2-5d7e-9fbe-4ed8d103e843",
+        "2d7d416a-adfe-5ed0-a436-c6dd9301d15b",
+        "ed6627df-8714-5eff-b546-df7f4bfee51c",
+        "80a66550-8794-55a1-89d6-2c1dbbf20590",
+        "fb75e494-ef8b-58b7-9427-a7348717f45e",
+        "aab23bcc-3958-594e-91ab-19c0dc9b4376",
+        "48d2178a-9bd1-5253-b695-af559cc61985",
+        "aa894e52-6f80-5a4c-9417-775388e2cfe2",
+        "871b47e0-fadc-5402-ad2b-3fdbff81a614",
+        "63c82924-9275-5f48-8a14-635a80bb4886",
+        "7805b8ad-64fa-506b-b60e-9d06c2ab7974",
+        "12396a69-d7fd-5591-8cf3-e5d1b755bd38",
+        "b436eca7-38ea-5c5d-b79f-24b305058d87",
+        "c837f9f6-bd41-5609-b447-1c0d5cef548c",
+        "44bf3e81-c4dc-5885-9019-75385da7d18c",
+        "b032c141-76b1-5b84-b23c-6c05452cf3a4",
+        "62ce9394-9d4a-521c-a3c6-9800f9939637",
+        "be9bbe7d-cd70-5358-9708-f944f6742c1f",
+        "0a12835e-7e0c-5181-b823-67fd81d90a47",
+        "fc265846-656c-56a4-9166-5be4a399d3eb",
+        "43f9c0a0-d661-5843-9820-df109ed37957",
+        "fc554b29-b8b0-5622-89ac-1cb7520d20f9",
+        "c9f31cc3-55d8-5a0a-a678-8659e994ba64",
+        "95111d12-8156-5ea9-aceb-ef9a975c6266"
+      ],
+      "series_definitions": {
+        "244c2f9c5454046b286bd4ab3d5d04dcd9fdff3715a32a965fb8e5efbf3d9e59": {
+          "metric": "weight",
+          "source_type": "manual",
+          "device": "manual",
+          "statistic": "designated_morning",
+          "algorithm_version": "mass-v1",
+          "profile_revision": null,
+          "unit": "kg",
+          "slot": null
+        }
+      },
+      "display_unit": "lb",
+      "display_value": "157",
+      "display_p25": "157",
+      "display_p75": "157"
+    },
+    "composition": [
+      {
+        "key": "weight",
+        "label": "weight",
+        "unit": "kg",
+        "value_kind": "decimal",
+        "capability_status": "implemented",
+        "chart_eligible": true,
+        "baseline_eligible": true,
+        "allowed_source_types": [
+          "manual",
+          "imported_file"
+        ],
+        "requirements": [],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "reported",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_data",
+        "absent_reason": "not_recorded"
+      },
+      {
+        "key": "bmi",
+        "label": "bmi",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "body_fat_percent",
+        "label": "body fat percent",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "fat_free_weight",
+        "label": "fat free weight",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "subcutaneous_fat_percent",
+        "label": "subcutaneous fat percent",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "visceral_fat_index",
+        "label": "visceral fat index",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "body_water_percent",
+        "label": "body water percent",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "skeletal_muscle_percent",
+        "label": "skeletal muscle percent",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "muscle_mass",
+        "label": "muscle mass",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "bone_mass",
+        "label": "bone mass",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "protein_percent",
+        "label": "protein percent",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "bmr",
+        "label": "bmr",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      },
+      {
+        "key": "metabolic_age",
+        "label": "metabolic age",
+        "unit": null,
+        "value_kind": "decimal",
+        "capability_status": "planned",
+        "chart_eligible": false,
+        "baseline_eligible": false,
+        "allowed_source_types": [],
+        "requirements": [
+          "verified_adapter"
+        ],
+        "allowed_views": [
+          "owner",
+          "scoped_doctor"
+        ],
+        "qualification": "unqualified",
+        "interpretation": "Reported observation; no diagnosis or treatment inference.",
+        "source_key_aliases": [],
+        "statistic": null,
+        "validation": {},
+        "display_precision": 2,
+        "value": null,
+        "availability": "awaiting_integration",
+        "absent_reason": "awaiting_integration"
+      }
+    ],
+    "delta": {
+      "value": "-0.362873896",
+      "unit": "kg",
+      "display_value": "-0.8",
+      "display_unit": "lb",
+      "comparison_in_reference_period": false,
+      "calculation_state": "current"
+    }
+  },
+  "/api/v1/breathing": {
+    "items": [
+      {
+        "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+        "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+        "kind": "pulmonary",
+        "version": 1,
+        "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "measured_start": null,
+          "measured_end": null,
+          "timezone": null,
+          "original_offset_minutes": null,
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "capture_status": "not_applicable",
+          "slot": "morning",
+          "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+          "values": {
+            "fev1": "3.82",
+            "fvc": "4.87",
+            "pef": "510",
+            "fev1_fvc": "78.439425051334702259"
+          },
+          "units": {
+            "fvc": "L",
+            "fev1": "L",
+            "fev6": "L",
+            "vext": "L",
+            "fivc": "L",
+            "pef": "L/min",
+            "fef2575": "L/s",
+            "fef25": "L/s",
+            "fef50": "L/s",
+            "fef75": "L/s",
+            "pif": "L/s",
+            "fet": "s",
+            "fev1_fvc": "%"
+          },
+          "ratio_method": "same-trial-ratio-v1",
+          "curves": null,
+          "curve_absent_reason": "not_recorded",
+          "synthetic_only": true
+        }
+      }
+    ],
+    "cursor": null,
+    "history": [
+      {
+        "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+        "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+        "kind": "pulmonary",
+        "version": 1,
+        "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "measured_start": null,
+          "measured_end": null,
+          "timezone": null,
+          "original_offset_minutes": null,
+          "source_type": "manual",
+          "qualification": "reported",
+          "validity": "valid",
+          "capture_status": "not_applicable",
+          "slot": "morning",
+          "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+          "values": {
+            "fev1": "3.82",
+            "fvc": "4.87",
+            "pef": "510",
+            "fev1_fvc": "78.439425051334702259"
+          },
+          "units": {
+            "fvc": "L",
+            "fev1": "L",
+            "fev6": "L",
+            "vext": "L",
+            "fivc": "L",
+            "pef": "L/min",
+            "fef2575": "L/s",
+            "fef25": "L/s",
+            "fef50": "L/s",
+            "fef75": "L/s",
+            "pif": "L/s",
+            "fet": "s",
+            "fev1_fvc": "%"
+          },
+          "ratio_method": "same-trial-ratio-v1",
+          "curves": null,
+          "curve_absent_reason": "not_recorded",
+          "synthetic_only": true
+        }
+      }
+    ],
+    "date": "2026-11-07",
+    "slot": "morning",
+    "minimum_sessions": 1,
+    "saved_session_count": 1,
+    "minimum_met": true,
+    "preferred_met": false,
+    "slot_coverage": [
+      "morning"
+    ],
+    "coverage_complete": true,
+    "selected_session": {
+      "id": "ad5c6f2c-407c-5c90-aa89-e5bdcff5d000",
+      "revision_id": "853e8702-e3a7-55a4-8a76-b2bbce479bb8",
+      "kind": "pulmonary",
+      "version": 1,
+      "etag": "\"fe065b685afd65916205e69243e986d977b22f3c\"",
+      "clinical_date": "2026-11-07",
+      "received_at": "2026-11-07T12:00:00Z",
+      "data": {
+        "clinical_date": "2026-11-07",
+        "time_precision": "day",
+        "measured_start": null,
+        "measured_end": null,
+        "timezone": null,
+        "original_offset_minutes": null,
+        "source_type": "manual",
+        "qualification": "reported",
+        "validity": "valid",
+        "capture_status": "not_applicable",
+        "slot": "morning",
+        "selected_trial_id": "e1de0c33-52af-5e87-bf89-11d45e813664",
+        "values": {
+          "fev1": "3.82",
+          "fvc": "4.87",
+          "pef": "510",
+          "fev1_fvc": "78.439425051334702259"
+        },
+        "units": {
+          "fvc": "L",
+          "fev1": "L",
+          "fev6": "L",
+          "vext": "L",
+          "fivc": "L",
+          "pef": "L/min",
+          "fef2575": "L/s",
+          "fef25": "L/s",
+          "fef50": "L/s",
+          "fef75": "L/s",
+          "pif": "L/s",
+          "fet": "s",
+          "fev1_fvc": "%"
+        },
+        "ratio_method": "same-trial-ratio-v1",
+        "curves": null,
+        "curve_absent_reason": "not_recorded",
+        "synthetic_only": true
+      }
+    },
+    "recent_baselines": {
+      "fvc": {
+        "value": null,
+        "eligible": false,
+        "contributor_day_count": 0,
+        "absent_reason": "not_enough_eligible_data",
+        "method_version": "recent-median-28d-v1",
+        "p25": null,
+        "p75": null,
+        "band_label": "Middle 50% of observed readings",
+        "revision_ids": [],
+        "series_definitions": {}
+      },
+      "fev1": {
+        "value": null,
+        "eligible": false,
+        "contributor_day_count": 0,
+        "absent_reason": "not_enough_eligible_data",
+        "method_version": "recent-median-28d-v1",
+        "p25": null,
+        "p75": null,
+        "band_label": "Middle 50% of observed readings",
+        "revision_ids": [],
+        "series_definitions": {}
+      },
+      "pef": {
+        "value": null,
+        "eligible": false,
+        "contributor_day_count": 0,
+        "absent_reason": "not_enough_eligible_data",
+        "method_version": "recent-median-28d-v1",
+        "p25": null,
+        "p75": null,
+        "band_label": "Middle 50% of observed readings",
+        "revision_ids": [],
+        "series_definitions": {}
+      }
+    }
+  },
+  "/api/v1/sleep-activity": {
+    "date": "2026-11-07",
+    "availability": "available",
+    "sleep": {
+      "id": "a36ada64-4059-5c1f-bc4d-2975020a1102",
+      "revision_id": "9312d599-febc-5aab-b9c0-2fa6d1fd3721",
+      "kind": "sleep",
+      "version": 1,
+      "etag": "\"088fad89f01856d6c423036a339ab3ad769c5a54\"",
+      "clinical_date": "2026-11-07",
+      "received_at": "2026-11-07T12:00:00Z",
+      "data": {
+        "clinical_date": "2026-11-07",
+        "time_precision": "day",
+        "source_type": "direct_device",
+        "validity": "valid",
+        "synthetic_only": true,
+        "complete": true,
+        "main_session": true,
+        "measured_start": "2026-11-06T21:00:00-05:00",
+        "measured_end": "2026-11-07T04:30:00-05:00",
+        "timezone": "UTC",
+        "stages": [
+          {
+            "start": "2026-11-06T21:00:00-05:00",
+            "end": "2026-11-07T00:46:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2026-11-07T00:46:00-05:00",
+            "end": "2026-11-07T01:10:00-05:00",
+            "stage": "awake"
+          },
+          {
+            "start": "2026-11-07T01:10:00-05:00",
+            "end": "2026-11-07T02:20:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2026-11-07T02:20:00-05:00",
+            "end": "2026-11-07T04:12:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2026-11-07T04:12:00-05:00",
+            "end": "2026-11-07T04:30:00-05:00",
+            "stage": "unknown"
+          }
+        ]
+      },
+      "stage_summary": {
+        "span_seconds": 27000,
+        "stage_seconds": {
+          "light": 13560,
+          "deep": 4200,
+          "rem": 6720,
+          "awake": 1440,
+          "unknown": 1080
+        },
+        "known_sleep_seconds": 24480,
+        "observed_awakenings": 1,
+        "method_version": "stage-interval-v1"
+      }
+    },
+    "sleep_sessions": [
+      {
+        "id": "a36ada64-4059-5c1f-bc4d-2975020a1102",
+        "revision_id": "9312d599-febc-5aab-b9c0-2fa6d1fd3721",
+        "kind": "sleep",
+        "version": 1,
+        "etag": "\"088fad89f01856d6c423036a339ab3ad769c5a54\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "source_type": "direct_device",
+          "validity": "valid",
+          "synthetic_only": true,
+          "complete": true,
+          "main_session": true,
+          "measured_start": "2026-11-06T21:00:00-05:00",
+          "measured_end": "2026-11-07T04:30:00-05:00",
+          "timezone": "UTC",
+          "stages": [
+            {
+              "start": "2026-11-06T21:00:00-05:00",
+              "end": "2026-11-07T00:46:00-05:00",
+              "stage": "light"
+            },
+            {
+              "start": "2026-11-07T00:46:00-05:00",
+              "end": "2026-11-07T01:10:00-05:00",
+              "stage": "awake"
+            },
+            {
+              "start": "2026-11-07T01:10:00-05:00",
+              "end": "2026-11-07T02:20:00-05:00",
+              "stage": "deep"
+            },
+            {
+              "start": "2026-11-07T02:20:00-05:00",
+              "end": "2026-11-07T04:12:00-05:00",
+              "stage": "rem"
+            },
+            {
+              "start": "2026-11-07T04:12:00-05:00",
+              "end": "2026-11-07T04:30:00-05:00",
+              "stage": "unknown"
+            }
+          ]
+        },
+        "stage_summary": {
+          "span_seconds": 27000,
+          "stage_seconds": {
+            "light": 13560,
+            "deep": 4200,
+            "rem": 6720,
+            "awake": 1440,
+            "unknown": 1080
+          },
+          "known_sleep_seconds": 24480,
+          "observed_awakenings": 1,
+          "method_version": "stage-interval-v1"
+        }
+      }
+    ],
+    "sleep_absent_reason": null,
+    "observation_series": [
+      {
+        "series_id": "a883347e844970ca8c3dd9f63ec234c41917cfad0032a715d2ddf713413fc008",
+        "metric_id": "phone_steps",
+        "unit": "count",
+        "qualification": null,
+        "statistic": null,
+        "points": [
+          {
+            "id": "e4f7ac02-f228-5d7f-bf90-ada36e05c3a6",
+            "revision_id": "7eac1f15-87e3-5529-a2a5-5e28f09ef57b",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"0608adb81466bbf3196bcf0dbd26b3fbd52a181c\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "phone_recording",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "phone_steps",
+              "value": "7420",
+              "unit": "count",
+              "measured_start": "2026-11-07T05:00:00-05:00",
+              "measured_end": "2026-11-07T19:00:00-05:00",
+              "timezone": "UTC"
+            }
+          }
+        ],
+        "daily_summary": {
+          "value": null,
+          "absent_reason": "insufficient_coverage"
+        }
+      },
+      {
+        "series_id": "8b96c0052f8f990fdc1264f8ef7b9ecb8f3c5d60c2619e41106464ca8eb602a1",
+        "metric_id": "bpm",
+        "unit": "beats/min",
+        "qualification": "reported",
+        "statistic": "requested_sample",
+        "points": [
+          {
+            "id": "866bdb30-8f2b-5336-831d-8effc5b0df78",
+            "revision_id": "3910f307-bdef-5cc6-8767-236cd1774f6f",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"1022feae1c84246e765a529c920314a169fb65de\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T05:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "e5ea9b08-7188-54f7-8bf2-8d697b12ca75",
+            "revision_id": "ff2da063-699d-5f47-982e-ea8c1b514435",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"9888178cd38db83b6e98d2f3d387d206834bfb78\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T05:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "73e5f986-e7fb-57a3-b7f4-50aedbedcdb5",
+            "revision_id": "b6e91dbb-3001-5311-ad15-65dea688729b",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"f4d5d086f6f1e1ad9cf174a56fe06c6042646c6d\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T05:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "31864b86-6a1b-5226-ada0-8f446715cb0b",
+            "revision_id": "44b20102-544d-5af4-b0b1-b4f2104c4c2d",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"dd8a35176de4cd1f992dbe6f1facb02d010c538a\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T05:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "8bfd41df-835a-534b-8cdb-f89ff78fa951",
+            "revision_id": "023a26da-80bd-55e8-8589-a4eb5534747a",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"9b5deaa298b47cc94536282ef4383bf6a8566524\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T06:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "7289503c-1025-53fc-93c5-b2ca0561019a",
+            "revision_id": "2b506c48-e21f-5882-a1b0-19c1ec8535cd",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"a528b7a3d7a0cfb0c831ada2675c6dec76e045bd\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T06:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "6d0a9e39-06ae-58de-9e10-d0940359cf83",
+            "revision_id": "55453eb6-e21e-5c79-84ae-e6c63bf2d777",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"5a65fe07e920d3248f84ed09044e3059ed078b7d\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T06:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "36b308a3-ea23-59a5-8043-1703fc221d28",
+            "revision_id": "ae59eb0e-8985-5773-81de-3bafa6886d32",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"1a3e1acc69b3f91a360fa53631b480813ebe146c\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T06:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "81f55a8e-8f34-55e4-8f20-970b2d227167",
+            "revision_id": "39ff7847-b229-5bc3-a65b-12ba3ec5ec27",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"a242fae2a5e3b92728e8aa352f1e23fb325ac39a\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T07:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "5e83db00-3faa-5c6e-89a7-9a924a57fddd",
+            "revision_id": "299cfdb2-e031-5c8a-9571-3cbadcde6d7d",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"6c93492a81da895b978c5118185b3efc40d2f604\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T07:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "03e536b3-b39f-50d2-a215-b76ff78de3bd",
+            "revision_id": "f2218e6e-5f76-5d2e-92d3-70287e711efb",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"f46a696276bfedc1a978fa8fe0d02f2d45c7d345\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T07:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "e97e96e5-05f4-5084-a716-34aa8c876038",
+            "revision_id": "5b1e66fa-e2bf-51aa-b816-567901d5aa40",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"61c61b4494bf9acaf64ceab03d325ed5693a3abc\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T07:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "e8c4e24b-1c01-56e7-8c6d-b7967dad332a",
+            "revision_id": "496a46be-ff21-5879-b476-e2f654518bfe",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"79701898807436cf541ccae465080fbf11145f94\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T08:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "29637f47-69bd-584c-8cf4-16b176fb0e44",
+            "revision_id": "e444dba4-f923-5095-89b1-abfee9a05e0f",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"cfe7969911974ffc022e6f02cee1440978051e72\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T08:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "e93cc8a5-0646-5fc9-8fad-ce2a749b7cfa",
+            "revision_id": "1033acad-613c-5c3c-92ab-98b65c3b6167",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"db95e8f205e519570971dff740c90e10e74f62f9\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T08:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "036d5332-d7ec-5ba2-9e50-ac0be717ea7a",
+            "revision_id": "188830da-2566-5e8c-8bb1-84cd8f6b394e",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"5b1a702d6b07cf9d28fb21ccaa8d7da2c5a6e8da\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T08:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "826d47b9-cb65-5d64-8adc-2b4a6ed303ad",
+            "revision_id": "8f259f8b-2ad3-5f6f-9dca-ddcbe859e21e",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"35e6e3571ab65f7687a9ebdefa7c2b85d76f3da6\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T09:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "8ce7d646-5502-569b-82e5-8cf263297549",
+            "revision_id": "d1569de8-be28-5a18-8e51-037a4a8dd15c",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"6e732396fa4eda0a101170bb42ce476f2202df36\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T09:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "7f5c204f-785a-5a53-8956-bae26c500c18",
+            "revision_id": "1d78a2b6-8384-582d-8151-1c95c2aa9f9f",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"7a9b5557216e48dfc427c3df552c7a0bc506e7ac\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T09:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "317f41a6-5617-5572-b538-4eed8954c7ab",
+            "revision_id": "41e62e18-a093-57ac-a7b4-afa1b90a89d3",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"2ffade08bd8d6ed7f2b116efb952ee2cbdb13de1\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T09:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "ac39cd6b-6737-5765-a09c-2b0615f9f886",
+            "revision_id": "f1f9cd9d-49c0-5fdb-b230-928d3f5d66c2",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"b72c5386dac081497f0b31c4c18594a07ad9151d\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T10:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "fcdae7cf-1482-59f9-9026-cc89c07a9a47",
+            "revision_id": "4c179533-e650-5561-aa60-3c968ce37e25",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"bfa4e317624405f50ac4561f64637ff1b9871176\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T10:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "11a4b025-385a-5b5e-8cb2-099541028b13",
+            "revision_id": "4722537f-92ae-5d5b-b58c-69f7c7ada560",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"002526ba36f9fec51c59697d4563b3432e7df647\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T10:30:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "4cb10b45-49a8-5a23-b634-9a4013ee7a97",
+            "revision_id": "60a81caf-2914-5c14-9866-f4f36aa97d37",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"40e0d594885d8f487aad2ae0e7a6d20ed707ac20\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T10:45:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "397dad14-7896-5ad5-9e0b-5220db453f12",
+            "revision_id": "758691ad-8cd8-5d01-bbe0-663ce202effe",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"aa53c213c3182706f87e2c8fa85c4539b2d9d507\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T11:00:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "4c203409-361e-568e-a7ee-0e770723dbe7",
+            "revision_id": "a6f49819-4241-5e81-99f3-662467e27e62",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"54828eb1586d96e5b8e5f9cd5b794836e892ce56\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T11:15:00-05:00",
+              "timezone": "UTC"
+            }
+          },
+          {
+            "id": "c43af0b0-c160-5e75-9a16-04a9a57388c6",
+            "revision_id": "48b0e8e6-9a47-5f87-8f70-18b3ccf6b729",
+            "kind": "observation",
+            "version": 1,
+            "etag": "\"b9dc27dd97b52b1e0329e188d05d66b8e13b05fb\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "direct_device",
+              "validity": "valid",
+              "synthetic_only": true,
+              "metric_id": "bpm",
+              "statistic": "requested_sample",
+              "value": "68",
+              "unit": "beats/min",
+              "qualification": "reported",
+              "measured_start": "2026-11-07T11:30:00-05:00",
+              "timezone": "UTC"
+            }
+          }
+        ],
+        "daily_summary": {
+          "value": "68",
+          "sample_count": 27,
+          "method_version": "requested-sample-mean-v1",
+          "revision_ids": [
+            "3910f307-bdef-5cc6-8767-236cd1774f6f",
+            "ff2da063-699d-5f47-982e-ea8c1b514435",
+            "b6e91dbb-3001-5311-ad15-65dea688729b",
+            "44b20102-544d-5af4-b0b1-b4f2104c4c2d",
+            "023a26da-80bd-55e8-8589-a4eb5534747a",
+            "2b506c48-e21f-5882-a1b0-19c1ec8535cd",
+            "55453eb6-e21e-5c79-84ae-e6c63bf2d777",
+            "ae59eb0e-8985-5773-81de-3bafa6886d32",
+            "39ff7847-b229-5bc3-a65b-12ba3ec5ec27",
+            "299cfdb2-e031-5c8a-9571-3cbadcde6d7d",
+            "f2218e6e-5f76-5d2e-92d3-70287e711efb",
+            "5b1e66fa-e2bf-51aa-b816-567901d5aa40",
+            "496a46be-ff21-5879-b476-e2f654518bfe",
+            "e444dba4-f923-5095-89b1-abfee9a05e0f",
+            "1033acad-613c-5c3c-92ab-98b65c3b6167",
+            "188830da-2566-5e8c-8bb1-84cd8f6b394e",
+            "8f259f8b-2ad3-5f6f-9dca-ddcbe859e21e",
+            "d1569de8-be28-5a18-8e51-037a4a8dd15c",
+            "1d78a2b6-8384-582d-8151-1c95c2aa9f9f",
+            "41e62e18-a093-57ac-a7b4-afa1b90a89d3",
+            "f1f9cd9d-49c0-5fdb-b230-928d3f5d66c2",
+            "4c179533-e650-5561-aa60-3c968ce37e25",
+            "4722537f-92ae-5d5b-b58c-69f7c7ada560",
+            "60a81caf-2914-5c14-9866-f4f36aa97d37",
+            "758691ad-8cd8-5d01-bbe0-663ce202effe",
+            "a6f49819-4241-5e81-99f3-662467e27e62",
+            "48b0e8e6-9a47-5f87-8f70-18b3ccf6b729"
+          ]
+        }
+      }
+    ],
+    "steps": {
+      "value": 7420,
+      "covered_seconds": 50400,
+      "excluded_intervals": 0,
+      "absent_reason": null,
+      "source": "phone"
+    },
+    "workouts": [
+      {
+        "id": "2e4753e6-12d7-50ef-8147-96df14d0d37e",
+        "revision_id": "282aeec1-eb93-5b95-aa24-3877df57977e",
+        "kind": "workout",
+        "version": 1,
+        "etag": "\"8f8179cedd1a1f06f6e39cd9e55ebabdae4d2243\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "source_type": "manual",
+          "validity": "valid",
+          "synthetic_only": true,
+          "state": "completed",
+          "timezone": "UTC",
+          "intervals": [
+            {
+              "start": "2026-11-07T08:00:00-05:00",
+              "end": "2026-11-07T08:34:00-05:00",
+              "kind": "work"
+            }
+          ]
+        },
+        "daily_duration": {
+          "value": "2040.0",
+          "work_seconds": "2040.0",
+          "unit": "s",
+          "method_version": "completed-work-rest-v1",
+          "absent_reason": null
+        }
+      }
+    ],
+    "cursor": null
+  },
+  "/api/v1/journal/entries": {
+    "items": [
+      {
+        "id": "eaa51bf2-3fe8-5a88-b8b4-c3e64a142033",
+        "revision_id": "d044c789-ab08-538a-b8d8-9a3729a5acbe",
+        "kind": "journal",
+        "version": 1,
+        "etag": "\"366c5d6f4bded7ed7cbce69e0c4622884294bfd6\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "source_type": "manual",
+          "validity": "valid",
+          "synthetic_only": true,
+          "title": "Fictional daily note",
+          "text": "Synthetic fixture only.",
+          "visibility": "private"
+        }
+      }
+    ],
+    "cursor": null
+  },
+  "/api/v1/journal/questions": {
+    "items": [
+      {
+        "id": "183cce6c-d6f4-54c2-9b2b-f8d64b75ea5c",
+        "revision_id": "a84f5158-1bdf-540a-8581-44007c4a28af",
+        "kind": "question",
+        "version": 1,
+        "etag": "\"22d44f2b5444f9ff7a993e63862b48bd90f969c5\"",
+        "clinical_date": "2026-11-07",
+        "received_at": "2026-11-07T12:00:00Z",
+        "data": {
+          "clinical_date": "2026-11-07",
+          "time_precision": "day",
+          "source_type": "manual",
+          "validity": "valid",
+          "synthetic_only": true,
+          "text": "Fictional appointment question",
+          "visibility": "private"
+        }
+      }
+    ],
+    "cursor": null
+  },
+  "/api/v1/journal/medication-events": {
+    "items": [],
+    "cursor": null
+  },
+  "/api/v1/labs/reports": {
+    "items": [
+      {
+        "extraction": null,
+        "id": "197c0ebe-4dc7-557c-97f0-c4c3fc748db8",
+        "document_id": "a171c9ec-1112-511d-8ab3-5a0e6040c740",
+        "etag": "\"711a4a87b4a91fd0fffb4b8cfb0c84e400739c48\"",
+        "state": "reviewed",
+        "parse_state": "ready",
+        "parse_error": "",
+        "review": {
+          "id": "c430d4f9-225a-558d-891a-7072f7e99c0a",
+          "revision_id": "51608ca0-bbfd-51d2-8992-091fa5df97cc",
+          "kind": "lab_review",
+          "version": 1,
+          "etag": "\"2e71013a66f159c2fd565922e2dd62e0f525be98\"",
+          "clinical_date": "2026-11-07",
+          "received_at": "2026-11-07T12:00:00Z",
+          "data": {
+            "clinical_date": "2026-11-07",
+            "time_precision": "day",
+            "patient_match_confirmed": true,
+            "source_report_status": "final",
+            "document_only": false,
+            "manual_transcription_confirmed": false,
+            "source_label": "Fictional laboratory",
+            "results": [
+              {
+                "label": "Fictional analyte",
+                "raw_result_text": "5.00",
+                "value_kind": "numeric",
+                "value": "5.00",
+                "operator": "eq",
+                "unit": "mg/L",
+                "reference_text": null,
+                "lab_flag": null,
+                "specimen": null,
+                "method": null,
+                "excluded": false,
+                "exclusion_reason": ""
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "/api/v1/labs/trends": {
+    "series": [
+      {
+        "series_id": "1978e508549843dc83183d1469d3c6ec9b5038a01f8bf2204ec96877e80932b2",
+        "unit": "mg/L",
+        "points": [
+          {
+            "id": "33f85409-5ebc-52bc-a241-272d537604f3",
+            "revision_id": "87f9fa47-2098-57ad-8b0e-6a29c3629873",
+            "kind": "lab",
+            "version": 1,
+            "etag": "\"ff0aeeec2be2ba9d1fe335b3aee687ff81a4440f\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "manual",
+              "validity": "valid",
+              "synthetic_only": true,
+              "label": "Fictional analyte",
+              "raw_result_text": "<5",
+              "value_kind": "numeric",
+              "value": "5",
+              "operator": "lt",
+              "unit": "mg/L",
+              "review_status": "reviewed",
+              "source_report_status": "final"
+            },
+            "plot_kind": "bound"
+          },
+          {
+            "id": "b0669163-bdc0-5992-9e80-624828069522",
+            "revision_id": "9a765f81-977d-5a96-95ac-b117263b313f",
+            "kind": "lab",
+            "version": 1,
+            "etag": "\"adc7809c55354bb4609918642cadd58682300b11\"",
+            "clinical_date": "2026-11-07",
+            "received_at": "2026-11-07T12:00:00Z",
+            "data": {
+              "label": "Fictional analyte",
+              "raw_result_text": "5.00",
+              "value_kind": "numeric",
+              "value": "5.00",
+              "operator": "eq",
+              "unit": "mg/L",
+              "reference_text": null,
+              "lab_flag": null,
+              "specimen": null,
+              "method": null,
+              "excluded": false,
+              "exclusion_reason": "",
+              "clinical_date": "2026-11-07",
+              "time_precision": "day",
+              "source_type": "imported_file",
+              "qualification": "reported",
+              "validity": "valid",
+              "review_status": "reviewed",
+              "source_report_status": "final",
+              "transcription_method": "extraction_review"
+            },
+            "plot_kind": "point"
+          }
+        ]
+      }
+    ],
+    "cursor": null
+  },
+  "/api/v1/settings": {
+    "id": "2218481a-89e0-56f1-a535-a273dc092783",
+    "revision_id": "bd48939a-0561-52b5-9d2f-68a71a2f98ba",
+    "kind": "settings",
+    "version": 2,
+    "etag": "\"c67d19b579966f7a92e10cad303afa29b8849d64\"",
+    "clinical_date": "2026-11-09",
+    "received_at": "2026-11-07T12:00:00Z",
+    "data": {
+      "display_name": "Fictional acceptance owner",
+      "time_format": "12h",
+      "timezone": "UTC",
+      "weight_unit": "lb",
+      "morning_sync": false,
+      "nightly_upload_time": "00:00",
+      "pulmonary_windows": {
+        "morning": [
+          "04:00",
+          "11:00"
+        ],
+        "noon": [
+          "11:00",
+          "16:00"
+        ],
+        "evening": [
+          "16:00",
+          "24:00"
+        ]
+      }
+    }
+  },
+  "/api/v1/security/status": {
+    "backup": "disabled_by_owner",
+    "last_successful_backup": null,
+    "restore": "not_verified",
+    "recovery_policy": "local_only_no_backup",
+    "ledger_pending": 0,
+    "encryption": "enabled",
+    "native_integration": "not_verified"
+  },
+  "/api/v1/security/sessions": {
+    "items": [
+      {
+        "id": "sample-session",
+        "current": true,
+        "created_at": "2026-11-07T12:00:00Z",
+        "last_activity_at": "2026-11-07T12:00:00Z",
+        "expires_at": "2026-11-07T12:15:00Z"
+      }
+    ]
+  },
+  "/api/v1/sharing/grants": {
+    "items": [
+      {
+        "id": "c09e998a-6835-5772-9404-aeb84a4106aa",
+        "state": "active",
+        "etag": "\"5ea37b9d9080632f7a74d17b588be1c58d017e87183911695a415456ffc5001f\"",
+        "recipient_email": "doctor-b@example.invalid",
+        "starts_on": "2026-10-01",
+        "ends_on": "2026-11-30",
+        "expires_at": "2026-11-10T19:25:49.090855+00:00",
+        "categories": [
+          "breathing"
+        ],
+        "actions": [
+          "read"
+        ],
+        "selected_entry_ids": [],
+        "selected_question_ids": [],
+        "selected_medication_event_ids": [],
+        "selected_result_ids": [],
+        "whole_document_ids": []
+      },
+      {
+        "id": "69798cfb-ffe9-5170-9216-bc2109abd882",
+        "state": "active",
+        "etag": "\"3cfa8d77da9874fef8a85564bb4d08e64313bb2c98dcb72e2abe182909ac3969\"",
+        "recipient_email": "doctor-a@example.invalid",
+        "starts_on": "2026-10-01",
+        "ends_on": "2026-11-30",
+        "expires_at": "2026-11-10T19:25:48.578743+00:00",
+        "categories": [
+          "body",
+          "questions"
+        ],
+        "actions": [
+          "read"
+        ],
+        "selected_entry_ids": [],
+        "selected_question_ids": [],
+        "selected_medication_event_ids": [],
+        "selected_result_ids": [],
+        "whole_document_ids": []
+      }
+    ]
+  },
+  "/api/v1/devices": {
+    "devices": []
+  },
+  "/api/v1/sync/status": {
+    "requests": []
+  },
+  "/api/v1/baselines": {
+    "items": [],
+    "cursor": null
+  },
+  "/api/v1/session": {
+    "latest_clinical_date": "2026-11-08",
+    "account_id": "67b98f62-f95d-5c46-ae0d-3b9c400b543a",
+    "role": "owner",
+    "context": {
+      "owner_id": "67b98f62-f95d-5c46-ae0d-3b9c400b543a",
+      "grant_id": null,
+      "view_mode": "owner"
+    },
+    "capabilities": [
+      "read",
+      "write",
+      "manage_sharing",
+      "export"
+    ],
+    "server_time": "2026-11-07T12:00:00Z",
+    "local_desktop": false,
+    "sample_data": true,
+    "upload_limits": {
+      "pdf_bytes": 26214400,
+      "csv_bytes": 5242880,
+      "pdf_pages": 100
+    },
+    "permission_epoch": "synthetic-epoch",
+    "idle_expires_at": "2026-11-07T12:15:00Z",
+    "absolute_expires_at": "2026-11-07T23:59:00Z",
+    "enrollment_state": "complete",
+    "csrf_token": "synthetic-only",
+    "preferences": {},
+    "operational_summary": {
+      "mode": "synthetic_development"
+    },
+    "auth_actions": []
+  },
+  "/api/v1/blood-pressure": {
+    "items": [
+      {
+        "id": "sample-monitor-1systolic",
+        "revision_id": "sample-monitor-1systolic-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_systolic",
+          "value": "118",
+          "unit": "mmHg",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-1",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "measurement",
+          "measurement_time_verified": true,
+          "clinical_eligible": true,
+          "validity": "valid",
+          "native_record": {
+            "deviceTime": "2026-11-07 10:00:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      },
+      {
+        "id": "sample-monitor-1diastolic",
+        "revision_id": "sample-monitor-1diastolic-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_diastolic",
+          "value": "77",
+          "unit": "mmHg",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-1",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "measurement",
+          "measurement_time_verified": true,
+          "clinical_eligible": true,
+          "validity": "valid",
+          "native_record": {
+            "deviceTime": "2026-11-07 10:00:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      },
+      {
+        "id": "sample-monitor-1pulse",
+        "revision_id": "sample-monitor-1pulse-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_pulse",
+          "value": "73",
+          "unit": "beats/min",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-1",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "measurement",
+          "measurement_time_verified": true,
+          "clinical_eligible": true,
+          "validity": "valid",
+          "native_record": {
+            "deviceTime": "2026-11-07 10:00:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      },
+      {
+        "id": "sample-monitor-2systolic",
+        "revision_id": "sample-monitor-2systolic-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_systolic",
+          "value": "118",
+          "unit": "mmHg",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-2",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "phone_received",
+          "measurement_time_verified": false,
+          "clinical_eligible": false,
+          "validity": "unqualified",
+          "native_record": {
+            "deviceTime": "2025-01-01 00:10:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      },
+      {
+        "id": "sample-monitor-2diastolic",
+        "revision_id": "sample-monitor-2diastolic-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_diastolic",
+          "value": "77",
+          "unit": "mmHg",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-2",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "phone_received",
+          "measurement_time_verified": false,
+          "clinical_eligible": false,
+          "validity": "unqualified",
+          "native_record": {
+            "deviceTime": "2025-01-01 00:10:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      },
+      {
+        "id": "sample-monitor-2pulse",
+        "revision_id": "sample-monitor-2pulse-v1",
+        "version": 1,
+        "etag": "sample",
+        "kind": "blood_pressure",
+        "clinical_date": "2026-11-07",
+        "data": {
+          "metric_id": "blood_pressure_pulse",
+          "value": "73",
+          "unit": "beats/min",
+          "device_id": "synthetic-monitor",
+          "device_model": "Sample blood pressure monitor",
+          "source_namespace": "synthetic",
+          "measurement_group_id": "sample-monitor-2",
+          "measured_start": "2026-11-07T10:00:00-05:00",
+          "timestamp_basis": "phone_received",
+          "measurement_time_verified": false,
+          "clinical_eligible": false,
+          "validity": "unqualified",
+          "native_record": {
+            "deviceTime": "2025-01-01 00:10:00"
+          },
+          "qualification": "Fictional display fixture"
+        }
+      }
+    ],
+    "cursor": null
+  }
+}

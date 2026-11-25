@@ -1,0 +1,2 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch();const page=await browser.newPage();await page.goto('https://localhost:5175/overview');await page.getByRole('heading',{name:'Overview',exact:true,level:1}).waitFor();await page.getByText('SAMPLE DATA',{exact:true}).waitFor();await page.getByText('3.82',{exact:false}).first().waitFor();console.log('Explicit MSW sample preview loaded.');await browser.close();

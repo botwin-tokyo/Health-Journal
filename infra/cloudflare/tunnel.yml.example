@@ -1,0 +1,17 @@
+# Render locally with the existing Cloudflare account/tunnel. No new account needed.
+# Keep tunnel credentials and the origin secret outside Git.
+tunnel: REPLACE_WITH_EXISTING_TUNNEL_ID
+credentials-file: /run/credentials/health03-tunnel.service/tunnel-json
+ingress:
+  - hostname: REPLACE_WITH_API_HOSTNAME
+    path: ^/(health|admin|internal|metrics|static-private|v1/sys|v1/transit)(/.*)?$
+    service: http_status:404
+  - hostname: REPLACE_WITH_API_HOSTNAME
+    path: ^/(api/v1|_allauth/browser/v1|o|android/oauth|\.well-known/assetlinks.json)(/.*)?$
+    service: http://127.0.0.1:8000
+    originRequest:
+      httpHostHeader: REPLACE_WITH_API_HOSTNAME
+  - service: http_status:404
+# Configure a request-header transform to replace X-Health03-Origin with the
+# operator secret, and a cache bypass rule for the entire API hostname.
+# Do not include request bodies, headers, query strings or credentials in logs.

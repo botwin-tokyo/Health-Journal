@@ -1,0 +1,358 @@
+{
+  "synthetic_only": true,
+  "fixture_version": "backend-1",
+  "weights": [
+    {
+      "id": "9c921b2b-6594-5f9e-a966-89951b7dbba1",
+      "clinical_date": "2026-10-11",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "c837e924-b790-5390-beb2-19cbb0ee1a9a",
+      "clinical_date": "2026-10-12",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "aba09946-53c6-5dbb-9b07-163a14e6d2fc",
+      "clinical_date": "2026-10-13",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "a78818ab-513c-521f-ba1c-6b608508a09a",
+      "clinical_date": "2026-10-14",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "03190d52-ac62-539b-bfd8-aee4b379afd5",
+      "clinical_date": "2026-10-15",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "8aab6747-dd4c-5377-af9f-acf951779e26",
+      "clinical_date": "2026-10-16",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "f8b9c47b-1665-5904-928d-7d7dd3d01e81",
+      "clinical_date": "2026-10-17",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "b076ddfe-06c6-5373-81fa-f0cc81391363",
+      "clinical_date": "2026-10-18",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "736ee04c-a518-565e-b5f4-90739781e6cc",
+      "clinical_date": "2026-10-19",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "7a5ef11a-4a9b-5657-aedb-5945f11780b6",
+      "clinical_date": "2026-10-20",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "c357d819-ec4b-5da5-8fad-9b3c3fd9fa1f",
+      "clinical_date": "2026-10-21",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "eb3f21ba-6a52-52db-9054-706f2f6a05b2",
+      "clinical_date": "2026-10-22",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "56bfc2d2-bb17-5529-ad9e-9030bf05b87f",
+      "clinical_date": "2026-10-23",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "9d46b48a-062e-53d3-ab15-d82ae86b2134",
+      "clinical_date": "2026-10-24",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "4d27abf5-6aff-50b9-8ff6-884f839f95e2",
+      "clinical_date": "2026-10-25",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "90cf375a-edde-5109-a49d-fd6dcc1d5340",
+      "clinical_date": "2026-10-26",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "635b913f-41bb-5ea1-abde-af8f2edfda92",
+      "clinical_date": "2026-10-27",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "50d9f79b-af9f-55f7-b545-5887c03c8518",
+      "clinical_date": "2026-10-28",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "3d469dcf-5b5c-5e89-874b-8f5832837ce6",
+      "clinical_date": "2026-10-29",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "b17290bc-0f90-5954-8b85-2a12cfaf4bd6",
+      "clinical_date": "2026-10-30",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "99116dd7-bec1-58af-862e-e9a6763fa4b9",
+      "clinical_date": "2026-10-31",
+      "time_precision": "day",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "bb402a6a-e555-5361-8974-0d94215f7caf",
+      "clinical_date": "2026-11-01",
+      "time_precision": "day",
+      "value": "156.5",
+      "unit": "lb"
+    },
+    {
+      "id": "ac7306fb-0383-5461-a971-eece0b51289d",
+      "clinical_date": "2026-11-02",
+      "time_precision": "day",
+      "value": "156.7",
+      "unit": "lb"
+    },
+    {
+      "id": "91770163-73b9-5c83-9303-ff52f27efe8c",
+      "clinical_date": "2026-11-03",
+      "time_precision": "day",
+      "value": "156.8",
+      "unit": "lb"
+    },
+    {
+      "id": "d9b73fa7-9da9-53f1-8ecc-5b3f9a2341a3",
+      "clinical_date": "2026-11-04",
+      "time_precision": "day",
+      "value": "156.6",
+      "unit": "lb"
+    },
+    {
+      "id": "c4281fcf-2189-5d9c-98db-ca6746ece503",
+      "clinical_date": "2026-11-05",
+      "time_precision": "day",
+      "value": "156.7",
+      "unit": "lb"
+    },
+    {
+      "id": "0763a846-3050-504b-bb1a-9e21d01f9ccc",
+      "clinical_date": "2026-11-06",
+      "time_precision": "day",
+      "value": "156.7",
+      "unit": "lb"
+    },
+    {
+      "id": "2b5a4d44-63dd-54ec-8daa-3f5edb521320",
+      "clinical_date": "2026-11-07",
+      "time_precision": "day",
+      "value": "156.2",
+      "unit": "lb"
+    }
+  ],
+  "expected": {
+    "seven_day_mean_lb": "156.6",
+    "fixed_reference_lb": "157.0"
+  },
+  "requested_hr_samples": [
+    {
+      "id": "81e062e6-3f5f-5eda-9db4-14cba6d86678",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "773620e0-4ed3-5309-b85f-75efaa8d5a5a",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "9cebc4e8-1383-5c47-a184-5142a80f12ce",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "625b77d1-ecd3-5e17-9af0-d89bbafa600c",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "d73376a5-e732-5fb3-97c5-62bf0a00d5a7",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "ffbe72d6-e45c-55ad-9a8c-6cadbc700449",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "c08e2892-a98d-58fd-94e2-9811c52e4603",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "62184f2c-a129-5f37-b895-309bc71ead7e",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "ce2d56ea-3e0a-5a40-9bec-4618a5d2b16d",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "c8acc114-3874-5346-90e8-99340f208740",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "ca35fb26-9614-56e7-9f9e-53fdf4ef4e03",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "d7792b5a-f875-5190-8ed1-33b99ba5a741",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "bec0b7b5-2b41-5643-9251-6adda5fe434b",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "5b548a99-bd8b-5f47-9b97-1579a2b9020c",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "0dffe203-1e20-5078-835b-ddb6084552da",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "e3cb1b72-0b2c-5a0b-8cb8-af427ac7d63f",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "f96b60da-b9b6-5e86-bab4-fa13455e1c68",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "cf810bd5-d66c-5e52-8696-4cc3a760fc03",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "d030527d-2715-5d7e-b2e5-d68d0dddb254",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "478bd8e8-4007-5066-8d75-6cba99944ccb",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "4e0caa1c-1efa-5776-a3d1-0c339b7f9282",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "046d1806-04cc-53da-9df5-e46d9b3b6d5b",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "f7509360-8645-55ca-ae43-22338cd23c11",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "c2f638d8-f8d5-5403-8ee9-092f2d1dada2",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "1b30fb75-d647-5411-93b1-9644597e7759",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "82f0f379-f8ef-542a-86fe-c811e699a101",
+      "value": "68",
+      "unit": "beats/min"
+    },
+    {
+      "id": "0975282e-2c3f-5556-8f73-a6d0b2b14672",
+      "value": "68",
+      "unit": "beats/min"
+    }
+  ],
+  "pulmonary": {
+    "fev1": "3.82",
+    "fvc": "4.87",
+    "unit": "L"
+  },
+  "sleep": {
+    "start": "2026-11-06T21:00:00-05:00",
+    "end": "2026-11-07T04:30:00-05:00",
+    "asleep_minutes": 408,
+    "awake_minutes": 24,
+    "unknown_minutes": 18
+  },
+  "phone_steps": 7420,
+  "workout_minutes": 34,
+  "received_at": "2026-11-08T00:12:00-05:00"
+}

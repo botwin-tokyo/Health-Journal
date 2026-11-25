@@ -1,0 +1,47 @@
+# Credentials and local runtime state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.sqlite3
+*.sqlite3-*
+.local/
+.runtime/
+.secrets/
+# Python / frontend build state
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+node_modules/
+dist/
+playwright-report/
+test-results/
+# Patient documents and exports never belong in this repository
+private/
+uploads/
+exports/
+backups/
+
+frontend/public/pdf-assets/
+
+# Local configuration, reviews, exports and workstation files
+SANITIZE_AUDIT.md
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.pfx
+*.crt
+*.kdbx
+*.bak
+*.dump
+*.sqlite
+*.db
+frontend/public/mockServiceWorker.js

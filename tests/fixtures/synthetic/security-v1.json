@@ -1,0 +1,245 @@
+{
+  "fixture_version": 1,
+  "synthetic_only": true,
+  "clock": "2026-11-08T12:00:00Z",
+  "accounts": [
+    {
+      "id": "owner-a",
+      "role": "owner",
+      "email": "owner@example.invalid"
+    },
+    {
+      "id": "doctor-a",
+      "role": "doctor",
+      "email": "doctor.a@example.invalid"
+    },
+    {
+      "id": "doctor-b",
+      "role": "doctor",
+      "email": "doctor.b@example.invalid"
+    },
+    {
+      "id": "uninvited",
+      "role": "none",
+      "email": "uninvited@example.invalid"
+    },
+    {
+      "id": "owner-b",
+      "role": "owner",
+      "email": "other.owner@example.invalid"
+    }
+  ],
+  "patients": [
+    {
+      "id": "patient-a",
+      "owner_id": "owner-a"
+    },
+    {
+      "id": "patient-b",
+      "owner_id": "owner-b"
+    }
+  ],
+  "devices": [
+    {
+      "id": "device-a",
+      "patient_id": "patient-a",
+      "namespace": "source-a"
+    },
+    {
+      "id": "device-b",
+      "patient_id": "patient-a",
+      "namespace": "source-b"
+    }
+  ],
+  "grants": [
+    {
+      "id": "grant-a",
+      "recipient": "doctor-a",
+      "patient_id": "patient-a",
+      "from": "2026-11-01",
+      "to": "2026-11-07",
+      "expires_at": "2026-12-01T00:00:00Z",
+      "state": "active",
+      "categories": [
+        "body",
+        "breathing",
+        "labs",
+        "journal",
+        "questions"
+      ],
+      "actions": [
+        "read",
+        "download_report"
+      ],
+      "journal_ids": [
+        "shared-note"
+      ],
+      "question_ids": [
+        "question-only"
+      ],
+      "document_ids": []
+    },
+    {
+      "id": "grant-b",
+      "recipient": "doctor-b",
+      "patient_id": "patient-a",
+      "from": "2026-10-01",
+      "to": "2026-11-07",
+      "expires_at": "2026-12-01T00:00:00Z",
+      "state": "active",
+      "categories": [
+        "body",
+        "breathing",
+        "labs",
+        "questions"
+      ],
+      "actions": [
+        "read",
+        "read_original_document"
+      ],
+      "journal_ids": [],
+      "question_ids": [
+        "question-only"
+      ],
+      "document_ids": [
+        "mixed-pdf"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "private-note",
+      "patient_id": "patient-a",
+      "kind": "journal",
+      "clinical_date": "2026-11-07",
+      "visibility": "private",
+      "text": "SYNTHETIC_PRIVATE_SENTINEL"
+    },
+    {
+      "id": "shared-note",
+      "patient_id": "patient-a",
+      "kind": "journal",
+      "clinical_date": "2026-11-07",
+      "visibility": "shared",
+      "text": "Fictional shared note"
+    },
+    {
+      "id": "question-only",
+      "patient_id": "patient-a",
+      "kind": "questions",
+      "clinical_date": "2026-11-07",
+      "visibility": "shared",
+      "private_origin_id": "private-note",
+      "text": "Fictional appointment question"
+    },
+    {
+      "id": "weight-current",
+      "revision_id": "weight-current-v1",
+      "patient_id": "patient-a",
+      "kind": "body",
+      "clinical_date": "2026-11-07",
+      "value": "156.2",
+      "unit": "lb"
+    },
+    {
+      "id": "weight-earlier",
+      "revision_id": "weight-earlier-v1",
+      "patient_id": "patient-a",
+      "kind": "body",
+      "clinical_date": "2026-10-28",
+      "value": "157.0",
+      "unit": "lb"
+    },
+    {
+      "id": "foreign-weight",
+      "patient_id": "patient-b",
+      "kind": "body",
+      "clinical_date": "2026-11-07",
+      "value": "170.0",
+      "unit": "lb"
+    },
+    {
+      "id": "lab-in-range",
+      "patient_id": "patient-a",
+      "kind": "labs",
+      "clinical_date": "2026-11-04",
+      "document_id": "mixed-pdf",
+      "reviewed": true
+    },
+    {
+      "id": "lab-out-of-range",
+      "patient_id": "patient-a",
+      "kind": "labs",
+      "clinical_date": "2026-10-20",
+      "document_id": "mixed-pdf",
+      "reviewed": true
+    }
+  ],
+  "baselines": [
+    {
+      "id": "fixed-reference",
+      "patient_id": "patient-a",
+      "dependencies": [
+        "weight-current-v1",
+        "weight-earlier-v1"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "id": "mixed-pdf",
+      "patient_id": "patient-a",
+      "result_ids": [
+        "lab-in-range",
+        "lab-out-of-range"
+      ]
+    }
+  ],
+  "expected_cases": [
+    {
+      "actor": "doctor-a",
+      "target": "private-note",
+      "allowed": false
+    },
+    {
+      "actor": "doctor-a",
+      "target": "question-only",
+      "allowed": true,
+      "omit": [
+        "private_origin_id",
+        "parent_text"
+      ]
+    },
+    {
+      "actor": "doctor-a",
+      "target": "mixed-pdf",
+      "allowed": false
+    },
+    {
+      "actor": "doctor-b",
+      "target": "mixed-pdf",
+      "allowed": true
+    },
+    {
+      "actor": "doctor-a",
+      "target": "fixed-reference",
+      "allowed": false,
+      "reason": "not_in_shared_scope"
+    },
+    {
+      "actor": "doctor-b",
+      "target": "fixed-reference",
+      "allowed": true
+    },
+    {
+      "actor": "owner-a",
+      "target": "foreign-weight",
+      "allowed": false
+    },
+    {
+      "actor": "uninvited",
+      "target": "weight-current",
+      "allowed": false
+    }
+  ]
+}

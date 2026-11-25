@@ -1,0 +1,7 @@
+# Source lookup rotation
+
+Source identities have an immutable record mapping and versioned `SourceLookup` aliases. Configure `HEALTH03_SOURCE_LOOKUP_VERSIONS=1,2` only after the new Transit identity key version exists. The application computes both keyed digests and rejects conflicting mappings. `uv run python backend/manage.py reindex_source_lookups --limit 100` is bounded, restartable and decrypts only authorized retained source evidence. Repeat until eligible rows are indexed; inspect its redacted counts. Record the indexing evidence before any retirement decision.
+
+Version 1 is deliberately mandatory: transport body receipts, asset bindings, original-document deduplication and deleted-source tombstones still use that version. A new source index does not prove those retained objects can survive retirement. Configuration that removes v1 fails closed. Deleted evidence is never decrypted or resurrected to reindex it. Keep the old lookup key available; a later retirement migration must account for every retained consumer and permanently retired source namespace. This restriction does not prevent clinical DEK wrapping-key rotation/re-wrapping.
+
+No live identity key was rotated in this implementation pass. Tests exercise dual-index resolution/reindex with simulated second-version digests alongside the actual local v1 service; they do not constitute a live two-version Transit rotation drill.

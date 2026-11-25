@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "mobile_export": {
+    "adapter_schema": "pb-health-export-1",
+    "enabled_kinds": [
+      "scalar_observation",
+      "sleep_session",
+      "pulmonary_session",
+      "workout",
+      "body_profile",
+      "body_goal",
+      "circumference",
+      "source_record"
+    ],
+    "verification_scope": "Executable schema fixtures and real-encryption isolated database test: direct scale, BMI, sleep, MIR trials, workout, partial/invalid evidence, assets, replay, revisions and tombstones.",
+    "contract_version": "health03-phone-2026-11-09",
+    "contract_schema": "contracts/phone/batch.schema.json",
+    "contract_fixtures": "contracts/phone/fixtures.json"
+  },
+  "body_scale": {
+    "verified": false
+  },
+  "lab_fhir": {
+    "verified": false
+  },
+  "skin_baseline_parity": {
+    "verified": false
+  }
+}

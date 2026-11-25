@@ -1,0 +1,2259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:health03:phone:pb-health-export-1:2026-11-09",
+  "title": "Health03 phone batch contract 2026-11-09",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "canonicalization",
+    "batch_id",
+    "source_namespace",
+    "generated_at",
+    "items"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "pb-health-export-1"
+    },
+    "canonicalization": {
+      "const": "jcs-rfc8785-v1"
+    },
+    "batch_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "source_namespace": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "generated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1000,
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    }
+  },
+  "$defs": {
+    "scalar_observation": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "decoder_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acquisition": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "qualification": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "validity": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "qualified": {
+          "type": "boolean"
+        },
+        "processing_receipt": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "decoder_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "algorithm_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "raw_digest": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "source_record_id": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "qualification": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "required": [],
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "metric_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/decimal"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "algorithm_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "estimated": {
+          "type": "boolean"
+        },
+        "stable": {
+          "type": "boolean"
+        },
+        "profile_revision": {
+          "type": [
+            "integer",
+            "string",
+            "null"
+          ]
+        },
+        "statistic": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "profile_context": {
+          "type": "object"
+        },
+        "evidence": {
+          "type": "object"
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "metric_id",
+        "value",
+        "unit",
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ]
+    },
+    "sleep_session": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "decoder_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acquisition": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "qualification": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "validity": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "qualified": {
+          "type": "boolean"
+        },
+        "processing_receipt": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "decoder_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "algorithm_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "raw_digest": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "source_record_id": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "qualification": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "required": [],
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "sleep_seconds": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/decimal"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stages": {
+          "type": "array",
+          "maxItems": 5760,
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              },
+              "end": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              },
+              "stage": {
+                "enum": [
+                  "awake",
+                  "light",
+                  "deep",
+                  "rem",
+                  "unknown"
+                ]
+              },
+              "raw_stage": {
+                "type": "string",
+                "maxLength": 200
+              }
+            },
+            "required": [
+              "start",
+              "end",
+              "stage"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "stage_algorithm": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "firmware": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "main_session": {
+          "type": "boolean"
+        },
+        "raw_evidence": {},
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "measured_start",
+        "measured_end",
+        "complete",
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ]
+    },
+    "pulmonary_session": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "decoder_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acquisition": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "qualification": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "validity": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "qualified": {
+          "type": "boolean"
+        },
+        "processing_receipt": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "decoder_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "algorithm_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "raw_digest": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "source_record_id": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "qualification": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "required": [],
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "firmware": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "saved",
+            "interrupted",
+            "draft",
+            "SAVED",
+            "INTERRUPTED",
+            "DRAFT"
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 200
+          }
+        },
+        "context_history": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object"
+          }
+        },
+        "trials": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "object",
+            "properties": {
+              "trial_id": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "measured_at": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              },
+              "values": {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d{1,18})?$",
+                      "maxLength": 55
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "units": {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "maxLength": 200
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "complete": {
+                "type": "boolean"
+              },
+              "quality": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "validity": {
+                "type": "string",
+                "maxLength": 200
+              },
+              "warnings": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "notes": {
+                "type": "string",
+                "maxLength": 20000
+              },
+              "flow_volume": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "x_unit": {
+                        "type": "string",
+                        "maxLength": 200
+                      },
+                      "y_unit": {
+                        "type": "string",
+                        "maxLength": 200
+                      },
+                      "points": {
+                        "type": "array",
+                        "maxItems": 100000,
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "x": {
+                              "type": "string",
+                              "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                              "maxLength": 400
+                            },
+                            "y": {
+                              "type": "string",
+                              "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                              "maxLength": 400
+                            }
+                          },
+                          "required": [
+                            "x",
+                            "y"
+                          ],
+                          "additionalProperties": true
+                        }
+                      }
+                    },
+                    "required": [
+                      "x_unit",
+                      "y_unit",
+                      "points"
+                    ],
+                    "additionalProperties": true
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "volume_time": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "x_unit": {
+                        "type": "string",
+                        "maxLength": 200
+                      },
+                      "y_unit": {
+                        "type": "string",
+                        "maxLength": 200
+                      },
+                      "points": {
+                        "type": "array",
+                        "maxItems": 100000,
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "x": {
+                              "type": "string",
+                              "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                              "maxLength": 400
+                            },
+                            "y": {
+                              "type": "string",
+                              "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+                              "maxLength": 400
+                            }
+                          },
+                          "required": [
+                            "x",
+                            "y"
+                          ],
+                          "additionalProperties": true
+                        }
+                      }
+                    },
+                    "required": [
+                      "x_unit",
+                      "y_unit",
+                      "points"
+                    ],
+                    "additionalProperties": true
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "raw_packets": {
+                "type": "array",
+                "maxItems": 100000,
+                "items": {
+                  "type": "string",
+                  "maxLength": 8192
+                }
+              },
+              "asset_ids": {
+                "type": "array",
+                "maxItems": 100,
+                "items": {
+                  "type": "string",
+                  "format": "uuid"
+                }
+              }
+            },
+            "required": [
+              "trial_id",
+              "measured_at",
+              "values",
+              "complete"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "selected_trial_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 200
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "slot": {
+          "anyOf": [
+            {
+              "enum": [
+                "morning",
+                "noon",
+                "evening"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "values": {
+          "type": "object",
+          "additionalProperties": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d{1,18})?$",
+                "maxLength": 55
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "measured_start",
+        "source_type",
+        "status"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "trials"
+              ]
+            },
+            {
+              "required": [
+                "native_record"
+              ]
+            },
+            {
+              "required": [
+                "native_record_assets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "workout": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "decoder_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acquisition": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "qualification": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "validity": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "qualified": {
+          "type": "boolean"
+        },
+        "processing_receipt": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "decoder_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "algorithm_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "raw_digest": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "source_record_id": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "qualification": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "required": [],
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "activity": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "state": {
+          "enum": [
+            "active",
+            "paused",
+            "completed",
+            "interrupted"
+          ]
+        },
+        "duration_seconds": {
+          "anyOf": [
+            {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/decimal"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "clock_discontinuity": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "intervals": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "object",
+            "properties": {
+              "start": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+              },
+              "end": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "kind": {
+                "enum": [
+                  "work",
+                  "rest",
+                  "pause"
+                ]
+              }
+            },
+            "required": [
+              "start",
+              "end",
+              "kind"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "routine_snapshot": {
+          "type": "object"
+        },
+        "sets": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "object"
+          }
+        },
+        "route_points": {
+          "type": "array",
+          "maxItems": 30000,
+          "items": {
+            "type": "object"
+          }
+        },
+        "calories": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "health_context": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "details": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "measured_start",
+        "source_type",
+        "activity",
+        "state"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ]
+    },
+    "source_record": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "decoder_version": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "acquisition": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "qualification": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "validity": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "qualified": {
+          "type": "boolean"
+        },
+        "processing_receipt": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "decoder_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "algorithm_version": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "raw_digest": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "source_record_id": {
+                  "type": "string",
+                  "maxLength": 200
+                },
+                "qualification": {
+                  "type": "string",
+                  "maxLength": 200
+                }
+              },
+              "required": [],
+              "additionalProperties": true
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "clinical_date",
+        "source_type"
+      ],
+      "additionalProperties": true
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_record_id",
+        "source_revision",
+        "kind",
+        "operation",
+        "payload"
+      ],
+      "properties": {
+        "source_record_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$"
+        },
+        "source_revision": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "kind": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "operation": {
+          "enum": [
+            "upsert",
+            "tombstone"
+          ]
+        },
+        "payload": {
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "scalar_observation"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/scalar_observation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "sleep_session"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/sleep_session"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "pulmonary_session"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/pulmonary_session"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "workout"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/workout"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "source_record"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/source_record"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "tombstone"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "maxProperties": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "body_profile"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/body_profile"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "body_goal"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/body_goal"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "circumference"
+              },
+              "operation": {
+                "const": "upsert"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/circumference"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "decimal": {
+      "type": "string",
+      "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d{1,18})?$",
+      "maxLength": 55
+    },
+    "body_profile": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "profile_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "height_cm": {
+          "$ref": "#/$defs/decimal"
+        },
+        "birth_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "sex": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "athlete": {
+          "type": "boolean"
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "profile_id",
+                "revision"
+              ]
+            },
+            {
+              "required": [
+                "native_record"
+              ]
+            },
+            {
+              "required": [
+                "native_record_assets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "body_goal": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "profile_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "weight_kg": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/decimal"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "body_fat_percent": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/decimal"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "profile_id"
+              ]
+            },
+            {
+              "required": [
+                "native_record"
+              ]
+            },
+            {
+              "required": [
+                "native_record_assets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "circumference": {
+      "type": "object",
+      "properties": {
+        "clinical_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "time_precision": {
+          "enum": [
+            "day",
+            "minute",
+            "second"
+          ]
+        },
+        "measured_start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "measured_end": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "original_offset_minutes": {
+          "type": "integer",
+          "minimum": -1080,
+          "maximum": 1080
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "type": "string",
+              "maxLength": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone_provenance": {
+          "enum": [
+            "source",
+            "offset_only"
+          ]
+        },
+        "source_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "native_source": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "device_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "received_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "updated_at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+        },
+        "asset_ids": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "profile_id": {
+          "type": "string",
+          "maxLength": 200
+        },
+        "site": {
+          "enum": [
+            "waist",
+            "hip",
+            "chest",
+            "arm",
+            "thigh"
+          ]
+        },
+        "value": {
+          "$ref": "#/$defs/decimal"
+        },
+        "unit": {
+          "const": "cm"
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 4000
+        },
+        "native_record": {
+          "type": "object"
+        },
+        "native_record_assets": {
+          "type": "object",
+          "required": [
+            "encoding",
+            "ids",
+            "bytes",
+            "sha256"
+          ],
+          "properties": {
+            "encoding": {
+              "const": "concatenated-utf8-json-v1"
+            },
+            "ids": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 100,
+              "items": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          }
+        }
+      },
+      "required": [
+        "source_type"
+      ],
+      "additionalProperties": true,
+      "anyOf": [
+        {
+          "required": [
+            "clinical_date"
+          ]
+        },
+        {
+          "required": [
+            "measured_start"
+          ]
+        }
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "site",
+                "value",
+                "unit"
+              ]
+            },
+            {
+              "required": [
+                "native_record"
+              ]
+            },
+            {
+              "required": [
+                "native_record_assets"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "body_goals": {
+      "$ref": "#/$defs/body_goal"
+    },
+    "body_circumference": {
+      "$ref": "#/$defs/circumference"
+    }
+  }
+}

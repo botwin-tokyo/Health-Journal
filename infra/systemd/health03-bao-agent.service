@@ -1,0 +1,33 @@
+[Unit]
+Description=Health03 scoped local OpenBao agent
+After=health03-openbao.service
+Wants=health03-openbao.service
+
+[Service]
+User=health03-agent
+Group=health03-kms
+ExecStart=/usr/local/lib/openbao/2.7.2/bao agent -config=/etc/health03/bao-agent/agent.hcl
+LoadCredential=client-key:/etc/health03/credentials/bao-agent.key
+RuntimeDirectory=health03-bao-agent
+RuntimeDirectoryMode=0750
+Restart=on-failure
+RestartSec=5
+UMask=0007
+LimitCORE=0
+MemorySwapMax=0
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+
+[Install]
+WantedBy=multi-user.target

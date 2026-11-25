@@ -1,0 +1,19 @@
+[Unit]
+Description=Health03 loopback dashboard
+After=health03-web.service
+[Service]
+DynamicUser=yes
+Environment=HEALTH03_PI_APPLIANCE=1
+LoadCredential=localhost.key:/etc/health03/credentials/localhost.key
+LoadCredential=localhost.pem:/etc/health03/credentials/localhost.pem
+ExecStart=/usr/bin/node /opt/health03/current/scripts/local_dashboard.mjs
+Restart=on-failure
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+CapabilityBoundingSet=
+LimitCORE=0
+[Install]
+WantedBy=multi-user.target

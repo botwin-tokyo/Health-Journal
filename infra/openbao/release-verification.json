@@ -1,0 +1,9 @@
+{
+  "version": "2.7.2",
+  "platform": "linux_arm64",
+  "archive": "openbao_2.7.2_linux_arm64.tar.gz",
+  "sha256": "5b97bf816fa820e5e521abec1db19c6161fcca2f666cf4a84e335089c0e83edd",
+  "signing_primary_fingerprint": "66D15FDD87287219C8E15478D200CD702853E6D0",
+  "release": "https://github.com/openbao/openbao/releases/tag/v2.7.2",
+  "method": "upstream GPG signature over checksums.txt, then archive SHA-256"
+}

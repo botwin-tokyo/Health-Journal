@@ -1,0 +1,581 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #202124;
+  background: #fafaf8;
+  font-synthesis: none;
+  --canvas: #fafaf8;
+  --surface: #fff;
+  --surface-muted: #f1f1ef;
+  --text: #202124;
+  --muted: #5e6066;
+  --border: #e7e7e4;
+  --control: #85878d;
+  --accent: #c8323a;
+  --accent-hover: #aa2630;
+  --tint: #fbedef;
+  --sidebar: #202124;
+  font-size: 16px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  border-top: 3px solid var(--accent);
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+textarea {
+  outline-offset: 4px;
+}
+:focus-visible {
+  outline: 3px solid var(--accent);
+}
+button,
+a {
+  touch-action: manipulation;
+}
+button {
+  cursor: pointer;
+  min-height: 44px;
+  border: 1px solid var(--control);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  padding: 9px 16px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+button:hover {
+  background: var(--surface-muted);
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.primary {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+.primary:hover {
+  background: var(--accent-hover);
+}
+.quiet {
+  border-color: transparent;
+  background: transparent;
+}
+.danger {
+  color: var(--accent);
+}
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.45px;
+}
+h3 {
+  font-size: 16px;
+}
+p + p {
+  margin-top: 12px;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 14px;
+}
+.mono {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.stack {
+  display: grid;
+  gap: 24px;
+  min-width: 0;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.between {
+  justify-content: space-between;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(290px, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.tri {
+  display: grid;
+  grid-template-columns: minmax(200px, 0.85fr) minmax(320px, 1.65fr) minmax(
+      240px,
+      1fr
+    );
+  gap: 16px;
+  align-items: start;
+}
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 4), minmax(0, 1fr));
+  gap: 16px;
+}
+.card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 24px;
+  min-width: 0;
+  box-shadow: 0 2px 8px #20212405;
+}
+.card:after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  background: #a5a6aa;
+  right: 10px;
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.cardTitle:before {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: var(--accent);
+  flex: none;
+}
+.metric .value {
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 12px 0 8px;
+  overflow-wrap: anywhere;
+}
+.value small {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  margin-left: 5px;
+}
+.hero {
+  background: var(--sidebar);
+  color: white;
+}
+.hero .muted {
+  color: #d4d4d4;
+}
+.hero .value {
+  font-size: 60px;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--control);
+  border-radius: 4px;
+  padding: 2px 7px;
+  font-size: 12px;
+  font-weight: 500;
+  max-width: 100%;
+  line-height: 1.5;
+}
+.badge.soft {
+  background: var(--surface-muted);
+  border-color: transparent;
+}
+.badge.red {
+  background: var(--tint);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.segmented {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 1px solid var(--control);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.segmented button {
+  border: 0;
+  border-radius: 0;
+  min-width: 52px;
+  background: transparent;
+}
+.segmented button[aria-pressed="true"] {
+  color: white;
+  background: var(--accent);
+}
+.field {
+  display: grid;
+  gap: 6px;
+  font-weight: 500;
+  min-width: 0;
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--control);
+  border-radius: 5px;
+  padding: 9px 12px;
+  background: white;
+  color: var(--text);
+  font-weight: 400;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 112px;
+}
+.form {
+  display: grid;
+  gap: 16px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 44px;
+}
+.check input {
+  accent-color: var(--accent);
+  height: 18px;
+  width: 18px;
+  flex: none;
+}
+.tableWrap {
+  overflow: auto;
+  max-width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+}
+th {
+  font-weight: 600;
+  background: var(--surface-muted);
+}
+th,
+td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+td {
+  overflow-wrap: anywhere;
+}
+.empty {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--muted);
+  background: var(--canvas);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+.error {
+  background: var(--tint);
+  border-left: 3px solid var(--accent);
+  padding: 16px;
+  color: #76212a;
+}
+.notice {
+  padding: 14px 16px;
+  background: var(--surface-muted);
+  border-radius: 6px;
+}
+.selected {
+  background: var(--tint) !important;
+  border-left: 3px solid var(--accent) !important;
+}
+.listButton {
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
+  border: 1px solid var(--border);
+  padding: 14px;
+  display: block;
+  margin-top: 8px;
+}
+.listButton small {
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+  color: var(--muted);
+}
+dialog {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+  width: min(640px, calc(100vw - 32px));
+  max-height: 90dvh;
+  overflow: auto;
+  color: var(--text);
+  box-shadow: 0 24px 80px #0003;
+}
+dialog::backdrop {
+  background: #20212480;
+}
+dialog h2 {
+  margin-bottom: 16px;
+}
+.dialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.skip {
+  position: fixed;
+  top: -60px;
+  left: 16px;
+  padding: 12px;
+  background: white;
+  z-index: 100;
+}
+.skip:focus {
+  top: 8px;
+}
+.skeleton {
+  height: 240px;
+  background: linear-gradient(
+    110deg,
+    var(--surface-muted),
+    white,
+    var(--surface-muted)
+  );
+  border-radius: 8px;
+}
+.divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 16px 0;
+}
+.chart {
+  height: 250px;
+  min-width: 0;
+}
+.chart svg {
+  max-width: 100%;
+}
+.keyValue {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.keyValue span:last-child {
+  text-align: right;
+}
+.full {
+  width: 100%;
+}
+.note {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 2px;
+}
+.calendar button {
+  padding: 4px;
+  min-width: 0;
+  border: 0;
+  min-height: 36px;
+}
+.auth {
+  min-height: 95dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.auth .card {
+  width: min(460px, 100%);
+}
+.auth h1 {
+  font-size: 32px;
+  margin: 24px 0 12px;
+}
+.auth .brand {
+  color: var(--text);
+}
+.auth p {
+  margin-bottom: 20px;
+}
+.pageFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 20px;
+  margin-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+@media (max-width: 1279px) {
+  .metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .tri {
+    grid-template-columns: minmax(200px, 0.8fr) minmax(0, 1.6fr);
+  }
+  .tri > :last-child {
+    grid-column: 2;
+  }
+  .value {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 959px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+  .tri {
+    grid-template-columns: 1fr;
+  }
+  .tri > :last-child {
+    grid-column: auto;
+  }
+  .grid2 {
+    gap: 16px;
+  }
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .formFirst {
+    order: -1;
+  }
+  .card {
+    padding: 20px;
+  }
+}
+@media (max-width: 639px) {
+  h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 16px;
+  }
+  .stack,
+  .split {
+    gap: 16px;
+  }
+  .metric .value {
+    font-size: 32px !important;
+  }
+  .value small {
+    font-size: 18px;
+  }
+  .metrics {
+    gap: 12px;
+  }
+  .pageFooter {
+    display: block;
+  }
+  button {
+    padding: 9px 12px;
+  }
+  .chart {
+    height: 240px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Route focus lands on the page title without making it resemble an input. */
+h1[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.overviewMetrics .metric .value {
+  font-size: clamp(24px, 2.5vw, 32px);
+}
+.value small {
+  white-space: nowrap;
+  display: inline-block;
+  margin-left: 4px;
+}

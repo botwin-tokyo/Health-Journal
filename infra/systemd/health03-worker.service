@@ -1,0 +1,39 @@
+[Unit]
+Description=Health03 worker
+Wants=postgresql.service health03-bao-agent.service health03-parser.service
+After=health03-parser.service postgresql.service health03-bao-agent.service
+StartLimitIntervalSec=120
+StartLimitBurst=5
+[Service]
+User=health03-worker
+Group=health03-worker
+SupplementaryGroups=health03-data health03-kms health03-parser-ipc
+WorkingDirectory=/opt/health03/current/backend
+EnvironmentFile=/etc/health03/runtime.env
+LoadCredential=django-secret:/etc/health03/credentials/django-secret
+LoadCredential=smtp-password:/etc/health03/credentials/smtp-password
+LoadCredential=tunnel-origin-secret:/etc/health03/credentials/tunnel-origin-secret
+ExecStart=/usr/bin/env HEALTH03_ENV=production PGUSER=health03-worker /opt/health03/current/.venv/bin/python /opt/health03/current/backend/manage.py run_backend_worker
+ReadWritePaths=/var/lib/health03
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+LimitCORE=0
+MemorySwapMax=0
+
+[Install]
+WantedBy=multi-user.target

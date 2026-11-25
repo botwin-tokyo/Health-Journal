@@ -1,0 +1,5175 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Health Journal backend contract",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api/v1/auth/bootstrap": {
+      "get": {
+        "operationId": "GET_api_v1_auth_bootstrap",
+        "summary": "public_auth_configuration",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "anonymous",
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/session": {
+      "get": {
+        "operationId": "GET_api_v1_session",
+        "summary": "eligible_account_and_owned_context",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/session/context": {
+      "post": {
+        "operationId": "POST_api_v1_session_context",
+        "summary": "eligible_account_and_owned_context",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/session/activity": {
+      "post": {
+        "operationId": "POST_api_v1_session_activity",
+        "summary": "eligible_account_and_owned_context",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/catalog/metrics": {
+      "get": {
+        "operationId": "GET_api_v1_catalog_metrics",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/overview": {
+      "get": {
+        "operationId": "GET_api_v1_overview",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/breathing": {
+      "get": {
+        "operationId": "GET_api_v1_breathing",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Authorized daily sessions, selected slot, references and dated designated-session history. Inclusive from/to history is bounded to 366 days.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "from",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "slot",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "morning",
+                "noon",
+                "evening"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/breathing/sessions/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_breathing_sessions_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/breathing/manual-sessions": {
+      "post": {
+        "operationId": "POST_api_v1_breathing_manual_sessions",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PulmonaryInput"
+              }
+            }
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/api/v1/breathing/sessions/{id}/designation": {
+      "patch": {
+        "operationId": "PATCH_api_v1_breathing_sessions_id_designation",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/breathing/imports": {
+      "post": {
+        "operationId": "POST_api_v1_breathing_imports",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/breathing/imports/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_breathing_imports_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/breathing/imports/{id}/review": {
+      "patch": {
+        "operationId": "PATCH_api_v1_breathing_imports_id_review",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/breathing/imports/{id}/commit": {
+      "post": {
+        "operationId": "POST_api_v1_breathing_imports_id_commit",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/body": {
+      "get": {
+        "operationId": "GET_api_v1_body",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/body/weights": {
+      "post": {
+        "operationId": "POST_api_v1_body_weights",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeightInput"
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/body/weights/{id}": {
+      "patch": {
+        "operationId": "PATCH_api_v1_body_weights_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeightInput"
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "delete": {
+        "operationId": "DELETE_api_v1_body_weights_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/body/days/{date}/representative": {
+      "put": {
+        "operationId": "PUT_api_v1_body_days_date_representative",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "date",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/sleep-activity": {
+      "get": {
+        "operationId": "GET_api_v1_sleep_activity",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/activity/workouts/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_activity_workouts_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/baselines": {
+      "get": {
+        "operationId": "GET_api_v1_baselines",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_baselines",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/baselines/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_baselines_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/baselines/preview": {
+      "post": {
+        "operationId": "POST_api_v1_baselines_preview",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/baselines/{id}/retire": {
+      "post": {
+        "operationId": "POST_api_v1_baselines_id_retire",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/journal/entries": {
+      "get": {
+        "operationId": "GET_api_v1_journal_entries",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_journal_entries",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/journal/entries/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_journal_entries_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "patch": {
+        "operationId": "PATCH_api_v1_journal_entries_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "DELETE_api_v1_journal_entries_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/journal/search": {
+      "post": {
+        "operationId": "POST_api_v1_journal_search",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/journal/questions": {
+      "get": {
+        "operationId": "GET_api_v1_journal_questions",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_journal_questions",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/journal/questions/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_journal_questions_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "patch": {
+        "operationId": "PATCH_api_v1_journal_questions_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "DELETE_api_v1_journal_questions_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/journal/medication-events": {
+      "get": {
+        "operationId": "GET_api_v1_journal_medication_events",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_journal_medication_events",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/journal/medication-events/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_journal_medication_events_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "patch": {
+        "operationId": "PATCH_api_v1_journal_medication_events_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "operationId": "DELETE_api_v1_journal_medication_events_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/labs/reports": {
+      "get": {
+        "operationId": "GET_api_v1_labs_reports",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/labs/reports/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_labs_reports_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/labs/uploads": {
+      "post": {
+        "operationId": "POST_api_v1_labs_uploads",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/labs/imports/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_labs_imports_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/labs/reports/{id}/review": {
+      "patch": {
+        "operationId": "PATCH_api_v1_labs_reports_id_review",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LabReview"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/labs/reports/{id}/publish": {
+      "post": {
+        "operationId": "POST_api_v1_labs_reports_id_publish",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/labs/trends": {
+      "get": {
+        "operationId": "GET_api_v1_labs_trends",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/documents/{id}/content": {
+      "get": {
+        "operationId": "GET_api_v1_documents_id_content",
+        "summary": "exact_document_consent_and_current_grant",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Authenticated bounded bytes",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/settings": {
+      "get": {
+        "operationId": "GET_api_v1_settings",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "patch": {
+        "operationId": "PATCH_api_v1_settings",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "display_name": {
+                    "type": "string",
+                    "maxLength": 80
+                  },
+                  "time_format": {
+                    "type": "string",
+                    "enum": [
+                      "12h",
+                      "24h"
+                    ]
+                  },
+                  "weight_unit": {
+                    "type": "string",
+                    "enum": [
+                      "lb",
+                      "kg"
+                    ]
+                  },
+                  "timezone": {
+                    "type": "string"
+                  },
+                  "morning_sync": {
+                    "type": "boolean"
+                  },
+                  "pulmonary_windows": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 2,
+                      "maxItems": 2
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/devices": {
+      "get": {
+        "operationId": "GET_api_v1_devices",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/devices/{id}/revoke": {
+      "post": {
+        "operationId": "POST_api_v1_devices_id_revoke",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/sync/requests": {
+      "post": {
+        "operationId": "POST_api_v1_sync_requests",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/sync/status": {
+      "get": {
+        "operationId": "GET_api_v1_sync_status",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/sharing/grants": {
+      "get": {
+        "operationId": "GET_api_v1_sharing_grants",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_sharing_grants",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrantInput"
+              }
+            }
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/api/v1/sharing/grants/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_sharing_grants_id",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "patch": {
+        "operationId": "PATCH_api_v1_sharing_grants_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/sharing/grants/{id}/invite": {
+      "post": {
+        "operationId": "POST_api_v1_sharing_grants_id_invite",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": true,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/sharing/grants/{id}/revoke": {
+      "post": {
+        "operationId": "POST_api_v1_sharing_grants_id_revoke",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/review/drafts": {
+      "get": {
+        "operationId": "GET_api_v1_review_drafts",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      },
+      "post": {
+        "operationId": "POST_api_v1_review_drafts",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/review/drafts/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_review_drafts_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "patch": {
+        "operationId": "PATCH_api_v1_review_drafts_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/api/v1/review/drafts/{id}/snapshots": {
+      "post": {
+        "operationId": "POST_api_v1_review_drafts_id_snapshots",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/review/snapshots/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_review_snapshots_id",
+        "summary": "artifact_audience_and_every_dependency",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Record"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/review/snapshots/{id}/exports": {
+      "post": {
+        "operationId": "POST_api_v1_review_snapshots_id_exports",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": true,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/exports": {
+      "post": {
+        "operationId": "POST_api_v1_exports",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": true,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/exports/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_exports_id",
+        "summary": "artifact_audience_and_every_dependency",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExportStatus"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/exports/{id}/download-tickets": {
+      "post": {
+        "operationId": "POST_api_v1_exports_id_download_tickets",
+        "summary": "current_patient_grant_and_dependencies",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": true,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DownloadTicket"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/exports/{id}/content": {
+      "get": {
+        "operationId": "GET_api_v1_exports_id_content",
+        "summary": "artifact_audience_and_every_dependency",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Authenticated bounded bytes",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/security/status": {
+      "get": {
+        "operationId": "GET_api_v1_security_status",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/security/sessions": {
+      "get": {
+        "operationId": "GET_api_v1_security_sessions",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/security/sessions/{id}/revoke": {
+      "post": {
+        "operationId": "POST_api_v1_security_sessions_id_revoke",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/security/access-events": {
+      "get": {
+        "operationId": "GET_api_v1_security_access_events",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/account/deletion-requests": {
+      "post": {
+        "operationId": "POST_api_v1_account_deletion_requests",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": true,
+        "x-step-up-required": true,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/account/deletion-requests/{id}": {
+      "get": {
+        "operationId": "GET_api_v1_account_deletion_requests_id",
+        "summary": "owner_only",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/ingestion/batches": {
+      "post": {
+        "operationId": "POST_api_v1_ingestion_batches",
+        "summary": "device_namespace_and_scope",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "uploader"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "UploaderBearer": []
+          },
+          {
+            "DeviceApiKey": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Identical batch replay; current state and original receipt URL",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchReceipt"
+                }
+              }
+            }
+          },
+          "202": {
+            "description": "New batch durably received and queued for item processing",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchReceipt"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Batch ID already used with different content or by another device",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BatchInput"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/ingestion/batches/{batch_id}": {
+      "get": {
+        "operationId": "GET_api_v1_ingestion_batches_batch_id",
+        "summary": "device_namespace_and_scope",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "uploader"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "UploaderBearer": []
+          },
+          {
+            "DeviceApiKey": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Device-scoped status and current per-item outcomes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchStatus"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "batch_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "batch_id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/ingestion/assets": {
+      "post": {
+        "operationId": "POST_api_v1_ingestion_assets",
+        "summary": "device_namespace_and_scope",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "uploader"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "UploaderBearer": []
+          },
+          {
+            "DeviceApiKey": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/ingestion/config": {
+      "get": {
+        "operationId": "GET_api_v1_ingestion_config",
+        "summary": "device_namespace_and_scope",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "uploader"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "UploaderBearer": []
+          },
+          {
+            "DeviceApiKey": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": []
+      }
+    },
+    "/api/v1/ingestion/commands/{id}/ack": {
+      "post": {
+        "operationId": "POST_api_v1_ingestion_commands_id_ack",
+        "summary": "device_namespace_and_scope",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "uploader"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "UploaderBearer": []
+          },
+          {
+            "DeviceApiKey": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommandReceipt"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/api/v1/blood-pressure": {
+      "get": {
+        "operationId": "GET_api_v1_blood_pressure",
+        "summary": "Current blood pressure readings with source qualifications",
+        "x-implemented": true,
+        "x-allowed-roles": [
+          "owner",
+          "doctor"
+        ],
+        "x-csrf-required": false,
+        "x-step-up-required": false,
+        "security": [
+          {
+            "BrowserSession": []
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Fail-closed structured error; endpoint implementation and release coverage are tracked separately.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Current authorized response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadModel"
+                }
+              }
+            }
+          }
+        },
+        "x-validation-status": "pending-final-acceptance",
+        "parameters": [
+          {
+            "name": "from",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "to",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "BrowserSession": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "__Host-health03_session"
+      },
+      "UploaderBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      },
+      "DeviceApiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    },
+    "schemas": {
+      "Decimal": {
+        "type": "string",
+        "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]{1,18})?$",
+        "maxLength": 56
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "field_errors": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "code": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [],
+                  "additionalProperties": false
+                }
+              },
+              "request_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "retryable": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "code",
+              "message",
+              "field_errors",
+              "retryable"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "additionalProperties": false
+      },
+      "Record": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "revision_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "etag": {
+            "type": "string"
+          },
+          "clinical_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "received_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "data": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "revision_id",
+          "kind",
+          "version",
+          "etag",
+          "data"
+        ],
+        "additionalProperties": false
+      },
+      "Page": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Record"
+            }
+          },
+          "cursor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "cursor"
+        ],
+        "additionalProperties": false
+      },
+      "WeightInput": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "$ref": "#/components/schemas/Decimal"
+          },
+          "unit": {
+            "enum": [
+              "kg",
+              "lb"
+            ]
+          },
+          "clinical_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "time_precision": {
+            "enum": [
+              "day",
+              "minute",
+              "second"
+            ]
+          },
+          "measured_start": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "measured_end": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "original_offset_minutes": {
+            "type": "integer"
+          },
+          "designation": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "enum": [
+                  "make_representative",
+                  "leave_unchanged"
+                ]
+              },
+              "expected_etag": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "additionalProperties": false
+          },
+          "note_operation": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "maxLength": 16384
+              },
+              "visibility": {
+                "const": "private"
+              }
+            },
+            "required": [
+              "text",
+              "visibility"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "value",
+          "unit",
+          "clinical_date",
+          "time_precision"
+        ],
+        "additionalProperties": false
+      },
+      "Unavailable": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "null"
+          },
+          "absent_reason": {
+            "type": "string"
+          },
+          "availability": {
+            "enum": [
+              "awaiting_data",
+              "awaiting_integration",
+              "unavailable",
+              "partial"
+            ]
+          }
+        },
+        "required": [
+          "value",
+          "absent_reason",
+          "availability"
+        ],
+        "additionalProperties": false
+      },
+      "CommandReceipt": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "etag": {
+            "type": "string"
+          },
+          "context_reset_required": {
+            "type": "boolean"
+          }
+        },
+        "required": [],
+        "additionalProperties": true
+      },
+      "ExportPart": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "mime_type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "bytes",
+          "mime_type"
+        ],
+        "additionalProperties": true
+      },
+      "ExportStatus": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "state": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed",
+              "expired",
+              "revoked",
+              "cancelled"
+            ]
+          },
+          "parts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExportPart"
+            }
+          },
+          "error_code": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "state"
+        ],
+        "additionalProperties": true
+      },
+      "DownloadTicket": {
+        "type": "object",
+        "properties": {
+          "ticket": {
+            "type": "string"
+          },
+          "part_id": {
+            "type": "string"
+          },
+          "start_deadline_seconds": {
+            "const": 60
+          }
+        },
+        "required": [
+          "ticket",
+          "part_id",
+          "start_deadline_seconds"
+        ],
+        "additionalProperties": true
+      },
+      "LabReview": {
+        "type": "object",
+        "properties": {
+          "patient_match_confirmed": {
+            "const": true
+          },
+          "source_report_status": {
+            "enum": [
+              "preliminary",
+              "final",
+              "corrected",
+              "unknown"
+            ]
+          },
+          "clinical_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "time_precision": {
+            "enum": [
+              "day",
+              "unknown"
+            ]
+          },
+          "document_only": {
+            "type": "boolean"
+          },
+          "results": {
+            "type": "array",
+            "maxItems": 5000,
+            "items": {
+              "$ref": "#/components/schemas/LabResult"
+            }
+          }
+        },
+        "required": [],
+        "additionalProperties": true
+      },
+      "LabResult": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxLength": 256
+          },
+          "raw_result_text": {
+            "type": "string",
+            "maxLength": 16384
+          },
+          "value_kind": {
+            "enum": [
+              "numeric",
+              "text",
+              "coded"
+            ]
+          },
+          "value": {
+            "oneOf": [
+              {
+                "$ref": "#/components/schemas/Decimal"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "operator": {
+            "enum": [
+              "eq",
+              "lt",
+              "le",
+              "gt",
+              "ge"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "excluded": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "label",
+          "raw_result_text"
+        ],
+        "additionalProperties": true
+      },
+      "PulmonaryInput": {
+        "type": "object",
+        "properties": {
+          "clinical_date": {
+            "type": "string"
+          },
+          "time_precision": {
+            "enum": [
+              "day",
+              "minute",
+              "second"
+            ]
+          },
+          "measured_start": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "timezone": {
+            "type": "string"
+          },
+          "original_offset_minutes": {
+            "type": "integer"
+          },
+          "slot": {
+            "enum": [
+              "morning",
+              "noon",
+              "evening",
+              null
+            ]
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/Decimal"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "clinical_date",
+          "time_precision",
+          "values"
+        ],
+        "additionalProperties": true
+      },
+      "JournalInput": {
+        "type": "object",
+        "properties": {
+          "clinical_date": {
+            "type": "string"
+          },
+          "time_precision": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 256
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 16384
+          },
+          "visibility": {
+            "enum": [
+              "private",
+              "shared"
+            ]
+          },
+          "tags": {
+            "type": "array",
+            "maxItems": 20,
+            "items": {
+              "type": "string",
+              "maxLength": 64
+            }
+          }
+        },
+        "required": [
+          "clinical_date",
+          "time_precision"
+        ],
+        "additionalProperties": true
+      },
+      "GrantInput": {
+        "type": "object",
+        "properties": {
+          "recipient_email": {
+            "type": "string",
+            "format": "email"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "body",
+                "breathing",
+                "sleep_activity",
+                "labs",
+                "journal",
+                "questions"
+              ]
+            }
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "read",
+                "download_report",
+                "read_original_document"
+              ]
+            }
+          },
+          "record_allowlists": {
+            "type": "object",
+            "properties": {
+              "journal": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "questions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "medication_events": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "labs": {
+                "type": [
+                  "array",
+                  "null"
+                ],
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "journal",
+              "questions",
+              "medication_events",
+              "labs"
+            ],
+            "additionalProperties": true
+          },
+          "document_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "recipient_email",
+          "from",
+          "to",
+          "categories",
+          "actions",
+          "record_allowlists",
+          "document_ids"
+        ],
+        "additionalProperties": true
+      },
+      "ReadModel": {
+        "type": "object",
+        "additionalProperties": true,
+        "description": "Authorized page-specific model; missing values remain null with absent_reason. No unrestricted owner payload is returned in a grant context."
+      },
+      "BatchReceipt": {
+        "type": "object",
+        "properties": {
+          "batch_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "state": {
+            "type": "string"
+          },
+          "receipt_url": {
+            "type": "string",
+            "format": "uri-reference"
+          }
+        },
+        "required": [
+          "batch_id",
+          "state",
+          "receipt_url"
+        ],
+        "additionalProperties": true
+      },
+      "BatchStatus": {
+        "type": "object",
+        "properties": {
+          "batch_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "state": {
+            "type": "string"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ordinal": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "outcome": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "record_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uuid"
+                },
+                "revision_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "format": "uuid"
+                },
+                "disposition": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "ordinal",
+                "outcome",
+                "reason",
+                "record_id",
+                "revision_id",
+                "disposition"
+              ],
+              "additionalProperties": true
+            }
+          },
+          "durably_retained": {
+            "type": "boolean"
+          },
+          "clinical_acceptance": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "batch_id",
+          "state",
+          "items",
+          "durably_retained",
+          "clinical_acceptance"
+        ],
+        "additionalProperties": true
+      },
+      "BatchInput": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "schema_version",
+          "canonicalization",
+          "batch_id",
+          "source_namespace",
+          "generated_at",
+          "items"
+        ],
+        "properties": {
+          "schema_version": {
+            "const": "pb-health-export-1"
+          },
+          "canonicalization": {
+            "const": "jcs-rfc8785-v1"
+          },
+          "batch_id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "source_namespace": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "generated_at": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2}(?:\\.\\d+)?)?(?:Z|[+-]\\d{2}:\\d{2})$"
+          },
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1000,
+            "items": {
+              "description": "Phone item; validated asynchronously against contracts/phone/batch.schema.json."
+            }
+          }
+        }
+      }
+    }
+  }
+}

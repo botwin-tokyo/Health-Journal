@@ -1,0 +1,27 @@
+[Unit]
+Description=Unlock local journal encryption for unattended startup
+Requires=health03-openbao.service
+After=health03-openbao.service
+Before=health03-web.service health03-worker.service health03-bao-agent.service health03-local-app.service health03-local-worker.service
+PartOf=health03-openbao.service
+[Service]
+Type=oneshot
+User=root
+LoadCredential=unseal-1:/etc/health03/unattended/share-1
+LoadCredential=unseal-2:/etc/health03/unattended/share-2
+LoadCredential=unseal-ca:/etc/health03/unattended/server-ca.crt
+ExecStart=/usr/bin/python3 /usr/local/lib/health03/unseal_local_openbao.py
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=180
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+CapabilityBoundingSet=
+LimitCORE=0
+[Install]
+WantedBy=multi-user.target

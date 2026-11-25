@@ -1,0 +1,1010 @@
+[
+  {
+    "name": "direct_scale_weight",
+    "item": {
+      "source_record_id": "fixture:direct_scale_weight",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "weight",
+        "value": "70.25",
+        "unit": "kg",
+        "stable": true,
+        "decoder_version": "fixture-scale-1",
+        "profile_revision": 3
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "weight"
+    }
+  },
+  {
+    "name": "calculated_bmi",
+    "item": {
+      "source_record_id": "fixture:calculated_bmi",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "bmi",
+        "value": "22.17",
+        "unit": null,
+        "estimated": true,
+        "algorithm_version": "bmi-v1",
+        "qualification": "Calculated from recorded weight and profile height",
+        "profile_revision": 3
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "body_observation"
+    }
+  },
+  {
+    "name": "sleep_stages",
+    "item": {
+      "source_record_id": "fixture:sleep_stages",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-01T22:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "DIRECT_RING",
+        "measured_end": "2020-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": true,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": [
+          {
+            "start": "2020-01-01T22:00:00-05:00",
+            "end": "2020-01-02T01:00:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2020-01-02T01:00:00-05:00",
+            "end": "2020-01-02T03:00:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2020-01-02T03:00:00-05:00",
+            "end": "2020-01-02T05:00:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2020-01-02T05:00:00-05:00",
+            "end": "2020-01-02T06:00:00-05:00",
+            "stage": "unknown",
+            "raw_stage": "not_recorded"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "sleep"
+    }
+  },
+  {
+    "name": "partial_sleep",
+    "item": {
+      "source_record_id": "fixture:partial_sleep",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-01T22:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "DIRECT_RING",
+        "measured_end": "2020-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": false,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": [
+          {
+            "start": "2020-01-01T22:00:00-05:00",
+            "end": "2020-01-02T01:00:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2020-01-02T01:00:00-05:00",
+            "end": "2020-01-02T03:00:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2020-01-02T03:00:00-05:00",
+            "end": "2020-01-02T05:00:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2020-01-02T05:00:00-05:00",
+            "end": "2020-01-02T06:00:00-05:00",
+            "stage": "unknown",
+            "raw_stage": "not_recorded"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "sleep"
+    }
+  },
+  {
+    "name": "synthetic_sleep",
+    "item": {
+      "source_record_id": "fixture:synthetic_sleep",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-01T22:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "synthetic",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "SYNTHETIC",
+        "measured_end": "2020-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": true,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": [
+          {
+            "start": "2020-01-01T22:00:00-05:00",
+            "end": "2020-01-02T01:00:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2020-01-02T01:00:00-05:00",
+            "end": "2020-01-02T03:00:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2020-01-02T03:00:00-05:00",
+            "end": "2020-01-02T05:00:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2020-01-02T05:00:00-05:00",
+            "end": "2020-01-02T06:00:00-05:00",
+            "stage": "unknown",
+            "raw_stage": "not_recorded"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "sleep"
+    }
+  },
+  {
+    "name": "future_sleep",
+    "item": {
+      "source_record_id": "fixture:future_sleep",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2099-01-01T22:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "DIRECT_RING",
+        "measured_end": "2099-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": true,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": []
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "sleep"
+    }
+  },
+  {
+    "name": "offset_only_sleep",
+    "item": {
+      "source_record_id": "fixture:offset_only_sleep",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-01T22:00:00-05:00",
+        "timezone": null,
+        "original_offset_minutes": -300,
+        "timezone_provenance": "offset_only",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "DIRECT_RING",
+        "measured_end": "2020-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": true,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": [
+          {
+            "start": "2020-01-01T22:00:00-05:00",
+            "end": "2020-01-02T01:00:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2020-01-02T01:00:00-05:00",
+            "end": "2020-01-02T03:00:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2020-01-02T03:00:00-05:00",
+            "end": "2020-01-02T05:00:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2020-01-02T05:00:00-05:00",
+            "end": "2020-01-02T06:00:00-05:00",
+            "stage": "unknown",
+            "raw_stage": "not_recorded"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "sleep"
+    }
+  },
+  {
+    "name": "mir_trials",
+    "item": {
+      "source_record_id": "fixture:mir_trials",
+      "source_revision": 1,
+      "kind": "pulmonary_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "title": "Synthetic MIR fixture",
+        "native_source": "MIR_BLE",
+        "status": "saved",
+        "firmware": "fixture",
+        "trials": [
+          {
+            "trial_id": "trial-1",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": true,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/s",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            }
+          },
+          {
+            "trial_id": "trial-2",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": false,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/s",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            },
+            "warnings": [
+              "Interrupted capture"
+            ]
+          }
+        ],
+        "notes": "Synthetic test only",
+        "tags": [
+          "fixture"
+        ],
+        "context_history": []
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "pulmonary"
+    }
+  },
+  {
+    "name": "incomplete_mir",
+    "item": {
+      "source_record_id": "fixture:incomplete_mir",
+      "source_revision": 1,
+      "kind": "pulmonary_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "title": "Synthetic MIR fixture",
+        "native_source": "MIR_BLE",
+        "status": "interrupted",
+        "firmware": "fixture",
+        "trials": [
+          {
+            "trial_id": "trial-1",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": false,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/s",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            }
+          }
+        ],
+        "notes": "Synthetic test only",
+        "tags": [
+          "fixture"
+        ],
+        "context_history": []
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "pulmonary"
+    }
+  },
+  {
+    "name": "workout_details",
+    "item": {
+      "source_record_id": "fixture:workout_details",
+      "source_revision": 1,
+      "kind": "workout",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "manual",
+        "device_id": "synthetic-fixture-device",
+        "activity": "walking",
+        "state": "completed",
+        "measured_end": "2020-01-02T08:10:00-05:00",
+        "duration_seconds": "540",
+        "clock_discontinuity": false,
+        "intervals": [
+          {
+            "start": "2020-01-02T08:00:00-05:00",
+            "end": "2020-01-02T08:09:00-05:00",
+            "kind": "work"
+          },
+          {
+            "start": "2020-01-02T08:09:00-05:00",
+            "end": "2020-01-02T08:10:00-05:00",
+            "kind": "pause"
+          }
+        ],
+        "routine_snapshot": {
+          "name": "Fixture routine",
+          "exercises": []
+        },
+        "sets": [],
+        "route_points": [],
+        "calories": {
+          "method": "reported",
+          "console_kcal": "40"
+        },
+        "health_context": {
+          "samples": []
+        },
+        "details": {
+          "version": "native-2"
+        }
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "workout"
+    }
+  },
+  {
+    "name": "active_workout",
+    "item": {
+      "source_record_id": "fixture:active_workout",
+      "source_revision": 1,
+      "kind": "workout",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "manual",
+        "device_id": "synthetic-fixture-device",
+        "activity": "walking",
+        "state": "active",
+        "measured_end": null,
+        "duration_seconds": null,
+        "clock_discontinuity": false,
+        "intervals": [],
+        "routine_snapshot": {
+          "name": "Fixture routine",
+          "exercises": []
+        },
+        "sets": [],
+        "route_points": [],
+        "calories": {
+          "method": "reported",
+          "console_kcal": "40"
+        },
+        "health_context": {
+          "samples": []
+        },
+        "details": {
+          "version": "native-2"
+        }
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "workout"
+    }
+  },
+  {
+    "name": "clock_changed_workout",
+    "item": {
+      "source_record_id": "fixture:clock_changed_workout",
+      "source_revision": 1,
+      "kind": "workout",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "manual",
+        "device_id": "synthetic-fixture-device",
+        "activity": "walking",
+        "state": "completed",
+        "measured_end": "2020-01-02T08:10:00-05:00",
+        "duration_seconds": "540",
+        "clock_discontinuity": true,
+        "intervals": [
+          {
+            "start": "2020-01-02T08:00:00-05:00",
+            "end": "2020-01-02T08:09:00-05:00",
+            "kind": "work"
+          },
+          {
+            "start": "2020-01-02T08:09:00-05:00",
+            "end": "2020-01-02T08:10:00-05:00",
+            "kind": "pause"
+          }
+        ],
+        "routine_snapshot": {
+          "name": "Fixture routine",
+          "exercises": []
+        },
+        "sets": [],
+        "route_points": [],
+        "calories": {
+          "method": "reported",
+          "console_kcal": "40"
+        },
+        "health_context": {
+          "samples": []
+        },
+        "details": {
+          "version": "native-2"
+        }
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "workout"
+    }
+  },
+  {
+    "name": "negative_temperature_deviation",
+    "item": {
+      "source_record_id": "fixture:negative_temperature_deviation",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "native_derived",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "skin_deviation",
+        "value": "-0.4",
+        "unit": "\u00b0C"
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "observation"
+    }
+  },
+  {
+    "name": "zero_steps",
+    "item": {
+      "source_record_id": "fixture:zero_steps",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "steps",
+        "value": "0",
+        "unit": "count"
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "observation"
+    }
+  },
+  {
+    "name": "unqualified_scalar",
+    "item": {
+      "source_record_id": "fixture:unqualified_scalar",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "heart_rate",
+        "value": "72",
+        "unit": "beats/min",
+        "qualified": false,
+        "qualification": "Native decoder could not qualify"
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "observation"
+    }
+  },
+  {
+    "name": "malformed_weight_unit",
+    "item": {
+      "source_record_id": "fixture:malformed_weight_unit",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "weight",
+        "value": "70.25",
+        "unit": "stones",
+        "stable": true,
+        "decoder_version": "fixture-scale-1",
+        "profile_revision": 3
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "disposition": "none",
+      "reason": "invalid_metric_unit"
+    }
+  },
+  {
+    "name": "malformed_source_type",
+    "item": {
+      "source_record_id": "fixture:malformed_source_type",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": 42,
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "weight",
+        "value": "70.25",
+        "unit": "kg",
+        "stable": true,
+        "decoder_version": "fixture-scale-1",
+        "profile_revision": 3
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "disposition": "none",
+      "reason": "invalid_source_type"
+    }
+  },
+  {
+    "name": "malformed_curve_unit",
+    "item": {
+      "source_record_id": "fixture:malformed_curve_unit",
+      "source_revision": 1,
+      "kind": "pulmonary_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "title": "Synthetic MIR fixture",
+        "native_source": "MIR_BLE",
+        "status": "saved",
+        "firmware": "fixture",
+        "trials": [
+          {
+            "trial_id": "trial-1",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": true,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/min",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            }
+          }
+        ],
+        "notes": "Synthetic test only",
+        "tags": [
+          "fixture"
+        ],
+        "context_history": []
+      }
+    },
+    "expected": {
+      "outcome": "rejected",
+      "disposition": "none",
+      "reason": "invalid_curve_unit"
+    }
+  },
+  {
+    "name": "body_profile",
+    "item": {
+      "source_record_id": "fixture:body_profile",
+      "source_revision": 1,
+      "kind": "body_profile",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "profile_id": "fixture-profile",
+        "revision": 3,
+        "height_cm": "178",
+        "birth_date": "1990-01-01",
+        "sex": "male",
+        "athlete": false
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "body_context"
+    }
+  },
+  {
+    "name": "body_goal",
+    "item": {
+      "source_record_id": "fixture:body_goal",
+      "source_revision": 1,
+      "kind": "body_goal",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "profile_id": "fixture-profile",
+        "weight_kg": "68",
+        "body_fat_percent": null
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "body_context"
+    }
+  },
+  {
+    "name": "circumference",
+    "item": {
+      "source_record_id": "fixture:circumference",
+      "source_revision": 1,
+      "kind": "circumference",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "site": "waist",
+        "value": "82",
+        "unit": "cm",
+        "profile_id": "fixture-profile"
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "clinical",
+      "record_kind": "body_observation"
+    }
+  },
+  {
+    "name": "unknown_metric",
+    "item": {
+      "source_record_id": "fixture:unknown_metric",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "new_native_reading",
+        "value": "12",
+        "unit": "native-unit"
+      }
+    },
+    "expected": {
+      "outcome": "accepted",
+      "disposition": "evidence",
+      "record_kind": "observation"
+    }
+  }
+]

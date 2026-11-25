@@ -1,0 +1,15 @@
+path "transit/keys/clinical-dek" { capabilities = ["read"] }
+path "transit/keys/auth-envelope" { capabilities = ["read"] }
+path "transit/keys/identity-lookup" { capabilities = ["read"] }
+path "transit/keys/clinical-dek/rotate" { capabilities = ["update"] }
+path "transit/keys/auth-envelope/rotate" { capabilities = ["update"] }
+path "transit/rewrap/clinical-dek" { capabilities = ["update"] }
+path "transit/rewrap/auth-envelope" { capabilities = ["update"] }
+path "auth/cert/certs/health03-app" { capabilities = ["create", "read", "update", "delete"] }
+path "auth/token/revoke-accessor" { capabilities = ["update"] }
+path "auth/token/lookup-accessor" { capabilities = ["update"] }
+path "sys/storage/raft/snapshot" { capabilities = ["read", "sudo"] }
+path "sys/seal" { capabilities = ["update", "sudo"] }
+path "auth/token/renew-self" { capabilities = ["update"] }
+path "auth/token/lookup-self" { capabilities = ["read"] }
+path "auth/token/revoke-self" { capabilities = ["update"] }

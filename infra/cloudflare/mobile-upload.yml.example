@@ -1,0 +1,13 @@
+# REPLACE_WITH_UPLOAD_HOST is exclusively the phone ingestion API, never a dashboard.
+tunnel: REPLACE_WITH_TUNNEL_UUID
+credentials-file: /run/credentials/health03-tunnel.service/tunnel-json
+metrics: 127.0.0.1:20241
+no-autoupdate: true
+ingress:
+  - hostname: REPLACE_WITH_UPLOAD_HOST
+    path: ^(/api/v1/ingestion/(config|assets|batches(/[0-9a-f-]{36})?|commands/[0-9a-f-]{36}/ack)|/o/(token|revoke_token)/)$
+    service: http://127.0.0.1:8010
+    originRequest:
+      httpHostHeader: REPLACE_WITH_UPLOAD_HOST
+      connectTimeout: 10s
+  - service: http_status:404

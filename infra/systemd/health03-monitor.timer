@@ -1,0 +1,8 @@
+[Unit]
+Description=Health03 monitor schedule
+[Timer]
+OnCalendar=hourly
+Persistent=true
+RandomizedDelaySec=30
+[Install]
+WantedBy=timers.target

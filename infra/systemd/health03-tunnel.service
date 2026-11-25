@@ -1,0 +1,35 @@
+[Unit]
+Description=Health03 outbound tunnel
+BindsTo=health03-web.service
+PartOf=health03-web.service
+After=network-online.target health03-web.service
+StartLimitIntervalSec=120
+StartLimitBurst=5
+[Service]
+User=health03-tunnel
+Group=health03-tunnel
+LoadCredential=tunnel-json:/etc/health03/credentials/tunnel.json
+ExecStart=/usr/bin/cloudflared --no-autoupdate --config /etc/health03/tunnel.yml tunnel run
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+LimitCORE=0
+MemorySwapMax=0
+
+InaccessiblePaths=-/var/lib/health03 -/var/lib/health03-dev -/run/health03-bao-agent -/var/run/postgresql
+[Install]
+WantedBy=multi-user.target

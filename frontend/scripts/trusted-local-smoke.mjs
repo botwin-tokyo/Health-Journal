@@ -1,0 +1,2 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch();const page=await browser.newPage();await page.goto('https://localhost:5173/body');await page.getByRole('heading',{name:'Body',exact:true,level:1}).waitFor();await page.getByLabel('Weight',{exact:true}).waitFor();console.log('Trusted HTTPS, direct local entry, Pi data loaded:',await page.locator('input[type=password]').count()===0);await browser.close();

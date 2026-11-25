@@ -1,0 +1,45 @@
+[Unit]
+Description=Health03 isolated fixed-operation parser and renderer
+StartLimitIntervalSec=120
+StartLimitBurst=5
+[Service]
+User=health03-parser
+Group=health03-parser-ipc
+WorkingDirectory=/opt/health03/current/backend
+ExecStart=/opt/health03/current/.venv/bin/python -m parser_service.server
+RuntimeDirectory=health03-parser
+RuntimeDirectoryMode=0750
+TemporaryFileSystem=/work:rw,size=256M,mode=1777
+ReadWritePaths=/run/health03-parser
+InaccessiblePaths=-/var/run/postgresql -/run/health03-bao-agent -/var/lib/health03 -/etc/health03 /home
+PrivateNetwork=yes
+RestrictAddressFamilies=AF_UNIX
+ProtectProc=invisible
+ProcSubset=pid
+MemoryMax=1G
+MemorySwapMax=0
+TasksMax=64
+LimitNOFILE=128
+LimitFSIZE=268435456
+LimitCORE=0
+KillMode=control-group
+TimeoutStopSec=5
+Restart=on-failure
+RestartSec=10
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+[Install]
+WantedBy=multi-user.target

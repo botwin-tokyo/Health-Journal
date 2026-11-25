@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "required": [
+    "account_eligibility",
+    "password_origin",
+    "session_lifecycle",
+    "step_up",
+    "invitation_confusion",
+    "oauth_flow",
+    "device_family",
+    "authenticator_separation",
+    "object_aggregate_scope",
+    "document_scope",
+    "sharing_races",
+    "idempotent_replay",
+    "encryption_integrity",
+    "kms_boundary",
+    "parser_isolation",
+    "browser_controls",
+    "export_safety",
+    "deletion_restore",
+    "volume_encryption",
+    "certificate_renewal",
+    "dependency_audit",
+    "secret_scan",
+    "production_settings",
+    "edge_cache_bypass"
+  ],
+  "owner_exceptions": {}
+}

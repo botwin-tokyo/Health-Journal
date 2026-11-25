@@ -1,0 +1,978 @@
+{
+  "version": 1,
+  "default": "deny",
+  "notes": [
+    "Implementation is checked in; runtime acceptance is recorded separately in release evidence.",
+    "Allauth browser auth and OAuth protocol routes use their maintained library protocols, not this domain mutation scheme.",
+    "POST baseline preview is owner-only; doctor baseline reads require all original contributors."
+  ],
+  "operations": [
+    {
+      "method": "GET",
+      "path": "/api/v1/auth/bootstrap",
+      "roles": [
+        "anonymous",
+        "owner",
+        "doctor"
+      ],
+      "policy": "public_auth_configuration",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/session",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "eligible_account_and_owned_context",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/session/context",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "eligible_account_and_owned_context",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/session/activity",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "eligible_account_and_owned_context",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/catalog/metrics",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/overview",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/breathing",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/breathing/sessions/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/breathing/manual-sessions",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/breathing/sessions/{id}/designation",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/breathing/imports",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/breathing/imports/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/breathing/imports/{id}/review",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/breathing/imports/{id}/commit",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/body",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/body/weights",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/body/weights/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/body/weights/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/body/days/{date}/representative",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/sleep-activity",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/activity/workouts/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/baselines",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/baselines/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/baselines/preview",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/baselines",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/baselines/{id}/retire",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/entries",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/journal/entries",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/entries/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/journal/entries/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/journal/entries/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/journal/search",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/questions",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/journal/questions",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/questions/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/journal/questions/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/journal/questions/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/medication-events",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/journal/medication-events",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/journal/medication-events/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/journal/medication-events/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/v1/journal/medication-events/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/labs/reports",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/labs/reports/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/labs/uploads",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/labs/imports/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/labs/reports/{id}/review",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/labs/reports/{id}/publish",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/labs/trends",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/documents/{id}/content",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "exact_document_consent_and_current_grant",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/settings",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/settings",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/devices",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/devices/{id}/revoke",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sync/requests",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/sync/status",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/sharing/grants",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sharing/grants",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/sharing/grants/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/sharing/grants/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sharing/grants/{id}/invite",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": true,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/sharing/grants/{id}/revoke",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/review/drafts",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/review/drafts",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/review/drafts/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/review/drafts/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/review/drafts/{id}/snapshots",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/review/snapshots/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "artifact_audience_and_every_dependency",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/review/snapshots/{id}/exports",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": true,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/exports",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": true,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exports/{id}",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "artifact_audience_and_every_dependency",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/exports/{id}/download-tickets",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": true,
+      "step_up": true,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/exports/{id}/content",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "artifact_audience_and_every_dependency",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/security/status",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/security/sessions",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/security/sessions/{id}/revoke",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/security/access-events",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/account/deletion-requests",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": true,
+      "step_up": true,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/account/deletion-requests/{id}",
+      "roles": [
+        "owner"
+      ],
+      "policy": "owner_only",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ingestion/batches",
+      "roles": [
+        "uploader"
+      ],
+      "policy": "device_namespace_and_scope",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/ingestion/batches/{batch_id}",
+      "roles": [
+        "uploader"
+      ],
+      "policy": "device_namespace_and_scope",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ingestion/assets",
+      "roles": [
+        "uploader"
+      ],
+      "policy": "device_namespace_and_scope",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/ingestion/config",
+      "roles": [
+        "uploader"
+      ],
+      "policy": "device_namespace_and_scope",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/ingestion/commands/{id}/ack",
+      "roles": [
+        "uploader"
+      ],
+      "policy": "device_namespace_and_scope",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/blood-pressure",
+      "roles": [
+        "owner",
+        "doctor"
+      ],
+      "policy": "current_patient_grant_and_dependencies",
+      "csrf": false,
+      "step_up": false,
+      "implemented": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# The generated client's digest is computed over the exact contract bytes.
+contracts/openapi.yaml text eol=lf
+frontend/src/api/generated.ts text eol=lf

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Health Journal
+Comment=Open the local health dashboard after its services are ready
+Exec=/usr/local/lib/health03/open_local_dashboard.sh
+Terminal=false
+Hidden=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=5

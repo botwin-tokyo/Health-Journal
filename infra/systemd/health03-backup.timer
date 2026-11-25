@@ -1,0 +1,8 @@
+[Unit]
+Description=Health03 backup schedule
+[Timer]
+OnCalendar=*-*-* 03:00:00 UTC
+Persistent=true
+RandomizedDelaySec=30
+[Install]
+WantedBy=timers.target

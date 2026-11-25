@@ -1,0 +1,267 @@
+{
+  "schema_version": "pb-health-export-1",
+  "canonicalization": "jcs-rfc8785-v1",
+  "batch_id": "00000000-0000-4000-8000-000000000001",
+  "source_namespace": "00000000-0000-4000-8000-000000000002",
+  "generated_at": "2020-01-02T14:00:00Z",
+  "items": [
+    {
+      "source_record_id": "fixture:direct_scale_weight",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "weight",
+        "value": "70.25",
+        "unit": "kg",
+        "stable": true,
+        "decoder_version": "fixture-scale-1",
+        "profile_revision": 3
+      }
+    },
+    {
+      "source_record_id": "fixture:calculated_bmi",
+      "source_revision": 1,
+      "kind": "scalar_observation",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "metric_id": "bmi",
+        "value": "22.17",
+        "unit": null,
+        "estimated": true,
+        "algorithm_version": "bmi-v1",
+        "qualification": "Calculated from recorded weight and profile height",
+        "profile_revision": 3
+      }
+    },
+    {
+      "source_record_id": "fixture:sleep_stages",
+      "source_revision": 1,
+      "kind": "sleep_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-01T22:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "native_source": "DIRECT_RING",
+        "measured_end": "2020-01-02T06:00:00-05:00",
+        "sleep_seconds": "25200",
+        "complete": true,
+        "decoder_version": "fixture-sleep-1",
+        "stage_algorithm": "fixture-stages-v1",
+        "acquisition": "DIRECT_RING_DOWNLOAD",
+        "stages": [
+          {
+            "start": "2020-01-01T22:00:00-05:00",
+            "end": "2020-01-02T01:00:00-05:00",
+            "stage": "light"
+          },
+          {
+            "start": "2020-01-02T01:00:00-05:00",
+            "end": "2020-01-02T03:00:00-05:00",
+            "stage": "deep"
+          },
+          {
+            "start": "2020-01-02T03:00:00-05:00",
+            "end": "2020-01-02T05:00:00-05:00",
+            "stage": "rem"
+          },
+          {
+            "start": "2020-01-02T05:00:00-05:00",
+            "end": "2020-01-02T06:00:00-05:00",
+            "stage": "unknown",
+            "raw_stage": "not_recorded"
+          }
+        ]
+      }
+    },
+    {
+      "source_record_id": "fixture:mir_trials",
+      "source_revision": 1,
+      "kind": "pulmonary_session",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "direct_device",
+        "device_id": "synthetic-fixture-device",
+        "title": "Synthetic MIR fixture",
+        "native_source": "MIR_BLE",
+        "status": "saved",
+        "firmware": "fixture",
+        "trials": [
+          {
+            "trial_id": "trial-1",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": true,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/s",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            }
+          },
+          {
+            "trial_id": "trial-2",
+            "measured_at": "2020-01-02T08:00:00-05:00",
+            "values": {
+              "fvc": "3.5",
+              "fev1": "2.9",
+              "pef": "420"
+            },
+            "units": {
+              "fvc": "L",
+              "fev1": "L",
+              "pef": "L/min"
+            },
+            "complete": false,
+            "quality": "Source reported complete",
+            "flow_volume": {
+              "x_unit": "L",
+              "y_unit": "L/s",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "0.5",
+                  "y": "5"
+                }
+              ]
+            },
+            "volume_time": {
+              "x_unit": "s",
+              "y_unit": "L",
+              "points": [
+                {
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "x": "1",
+                  "y": "2.9"
+                }
+              ]
+            },
+            "warnings": [
+              "Interrupted capture"
+            ]
+          }
+        ],
+        "notes": "Synthetic test only",
+        "tags": [
+          "fixture"
+        ],
+        "context_history": []
+      }
+    },
+    {
+      "source_record_id": "fixture:workout_details",
+      "source_revision": 1,
+      "kind": "workout",
+      "operation": "upsert",
+      "payload": {
+        "clinical_date": "2020-01-02",
+        "time_precision": "second",
+        "measured_start": "2020-01-02T08:00:00-05:00",
+        "timezone": "EST5EDT",
+        "original_offset_minutes": -300,
+        "timezone_provenance": "source",
+        "source_type": "manual",
+        "device_id": "synthetic-fixture-device",
+        "activity": "walking",
+        "state": "completed",
+        "measured_end": "2020-01-02T08:10:00-05:00",
+        "duration_seconds": "540",
+        "clock_discontinuity": false,
+        "intervals": [
+          {
+            "start": "2020-01-02T08:00:00-05:00",
+            "end": "2020-01-02T08:09:00-05:00",
+            "kind": "work"
+          },
+          {
+            "start": "2020-01-02T08:09:00-05:00",
+            "end": "2020-01-02T08:10:00-05:00",
+            "kind": "pause"
+          }
+        ],
+        "routine_snapshot": {
+          "name": "Fixture routine",
+          "exercises": []
+        },
+        "sets": [],
+        "route_points": [],
+        "calories": {
+          "method": "reported",
+          "console_kcal": "40"
+        },
+        "health_context": {
+          "samples": []
+        },
+        "details": {
+          "version": "native-2"
+        }
+      }
+    }
+  ]
+}

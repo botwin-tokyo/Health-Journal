@@ -1,0 +1,11 @@
+{
+  "repository": "rest:https://backup.example.org:8001/health03/",
+  "off_device": true,
+  "password_file": "/run/credentials/health03-backup.service/restic-password",
+  "tls_ca_file": "/etc/health03/backup-ca.crt",
+  "kms_address": "https://127.0.0.1:8200",
+  "kms_ca_file": "/etc/health03/bao-server-ca.crt",
+  "kms_client_certificate": "/etc/health03/backup-client.crt",
+  "kms_client_key": "/run/credentials/health03-backup.service/bao-backup-key",
+  "canary_file": "/var/lib/health03/recovery-canary.json"
+}
